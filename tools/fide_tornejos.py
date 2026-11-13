@@ -53,11 +53,20 @@ def pagina():
     return PW["pg"]
 
 
+SEGUIDES = [0]
+
+
 def una_vegada(fide, per, t, intents=4):
     for i in range(intents):
+        if SEGUIDES[0] >= 8:         # FIDE no respon des d'aquest servidor: no té sentit esperar una hora, es surt de seguida i es reintenta més tard
+            print("::error::FIDE no és accessible des d'aquest servidor ara mateix (8 fallades seguides); s'atura i es reintentarà més tard")
+            sys.exit(2)
         try:
-            return pagina().evaluate("u => fetch(u, {headers: {'X-Requested-With': 'XMLHttpRequest'}}).then(r => r.text())", URL.format(id=fide, per=per, t=t))
+            r = pagina().evaluate("u => fetch(u, {headers: {'X-Requested-With': 'XMLHttpRequest'}}).then(r => r.text())", URL.format(id=fide, per=per, t=t))
+            SEGUIDES[0] = 0
+            return r
         except Exception as e:
+            SEGUIDES[0] += 1
             print(f"    FIDE {per} t={t}: intent {i + 1} fallit ({type(e).__name__})", flush=True)
             time.sleep(4 * (i + 1))
     return None
