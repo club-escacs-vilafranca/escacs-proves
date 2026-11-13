@@ -1,0 +1,14 @@
+name: PROVA · FIDE des de GitHub
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  fide:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install -q playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/prova_fide.py | tee -a "$GITHUB_STEP_SUMMARY"
