@@ -10,6 +10,11 @@ ESPERATS = {"silvia": "serradell munoz silvia", "andrea": "serradell villa andre
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page()
     vistos = set()
+    from bs4 import BeautifulSoup
+    pg.goto("https://info64.org/?hl=ca", wait_until="domcontentloaded", timeout=90000); pg.wait_for_timeout(3000)
+    s0 = BeautifulSoup(pg.content(), "html.parser")
+    print("ENLLAÇOS del menú:", [(a.get_text(" ", strip=True)[:30], a["href"]) for a in s0.select("a[href]") if re.search(r"search|cerca|player|jugador|buscar", (a["href"] + a.get_text()).lower())][:20])
+    print("FORMULARIS:", [(f.get("action"), [i.get("name") for i in f.select("input")]) for f in s0.select("form")][:6])
     for q in ("serradell", "serradell munoz", "serradell villa", "munoz serradell"):
         try:
             files = I.cerca(pg, q)
