@@ -1,0 +1,14 @@
+name: PROVA · Diagnòstic Info64 (llista sense filtres)
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  llista:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install -q beautifulsoup4 playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/prova_info64_llista.py | tee -a "$GITHUB_STEP_SUMMARY"
