@@ -1,0 +1,109 @@
+{
+ "id": "rapides-festa-major",
+ "name": "Ràpides de la festa major",
+ "resum": "Torneig de partides ràpides durant la festa major.",
+ "place": "Vilafranca del Penedès",
+ "format": "Ràpides",
+ "editions": [
+  {
+   "year": "2026",
+   "num": "66è",
+   "status": "acabat",
+   "datesText": "Dissabte 22 d'agost de 2026, a les 16:30 h",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "66è Torneig de Ràpides d'Escacs de Festa Major, II Memorial Vicenç Güixens. Torneig de partides ràpides que organitza el Club d'Escacs Vilafranca coincidint amb la festa major de Vilafranca, amb la col·laboració de la Federació Catalana d'Escacs i L'Agrícol."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Data i hora",
+      "valor": "Dissabte 22 d'agost de 2026, a les 16:30 h"
+     },
+     {
+      "etiqueta": "Lloc",
+      "valor": "A l'exterior: Rambla Nostra Senyora, entre els números 2 i 8, Vilafranca del Penedès"
+     },
+     {
+      "etiqueta": "En cas de pluja",
+      "valor": "Passatge Alcover, 2 (Centre Agrícola), Vilafranca del Penedès"
+     },
+     {
+      "etiqueta": "Ritme de joc",
+      "valor": "3 minuts per jugador + 2 segons d'increment"
+     },
+     {
+      "etiqueta": "Format",
+      "valor": "Sistema suís en grup únic, a 8 o 9 rondes segons els inscrits"
+     },
+     {
+      "etiqueta": "Premis",
+      "valor": "Trofeu al 1r, 2n i 3r classificat i al millor sub-12. Piscolabis en acabar el lliurament de premis."
+     },
+     {
+      "etiqueta": "Inscripció",
+      "valor": "Gratuïta, per WhatsApp al 651 77 05 02 (Josep Ràfols) o pel formulari. Places limitades."
+     }
+    ],
+    "docs": [
+     {
+      "n": "Bases 2026",
+      "url": "assets/uploads/bases-rapides-festa-major-2026.pdf"
+     }
+    ],
+    "url": "https://forms.gle/VRPZLiEB6nDKC1BW7",
+    "cartell": "assets/uploads/cartell-rapides-festa-major-2026.jpg"
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "after": {
+     "text": "Resultats no publicats.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [
+     {
+      "src": "assets/noticies/17980486842118814-1.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-2.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-3.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-4.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-5.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-6.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-7.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/17980486842118814-8.jpg",
+      "peu": ""
+     }
+    ]
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

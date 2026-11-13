@@ -1,0 +1,105 @@
+{
+ "id": "gegant-escolar",
+ "name": "Torneig Gegant d'escacs escolar",
+ "resum": "Torneig escolar d'escacs.",
+ "place": "Per confirmar",
+ "format": "Escolar",
+ "editions": [
+  {
+   "year": "2026",
+   "status": "acabat",
+   "datesText": "Diumenge 18 d'octubre de 2026",
+   "num": "XIX",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "19è Torneig Gegant d'escacs escolar, organitzat pel Club d'Escacs Vilafranca amb la col·laboració del Consell Esportiu de l'Alt Penedès i l'Ajuntament de Vilafranca del Penedès. Es juga a la Rambla Sant Francesc de Vilafranca, amb l'objectiu de promocionar i fomentar els escacs a nivell escolar i apropar-los al carrer.",
+     "Hi poden participar totes les escoles de Vilafranca i de la comarca, sense límit d'inscripcions per escola. L'edat màxima és la dels nascuts l'any 2011."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Sistema",
+      "valor": "Fórmula GEGANT: suís a 2 rondes, procurant que dos jugadors de la mateixa escola no juguin entre ells. Puntuen els sis primers jugadors de la llista de forces de cada escola; guanya l'escola amb més punts."
+     },
+     {
+      "etiqueta": "Desempat",
+      "valor": "10 punts per cada punt del primer tauler, 8 del segon, 6 del tercer, 4 del quart, 2 del cinquè i 1 del sisè (per això és important l'ordre de la llista de cada escola)"
+     },
+     {
+      "etiqueta": "Hora",
+      "valor": "Presentació dels jugadors de 9:45 a 10:00; tot seguit comença el torneig"
+     },
+     {
+      "etiqueta": "Lloc",
+      "valor": "Rambla Sant Francesc, Vilafranca del Penedès. Amb pluja o mal temps, a l'Agrícol (Passatge Alcover, 2)"
+     },
+     {
+      "etiqueta": "Inscripció",
+      "valor": "Gratuïta i prèvia obligatòria, enviant per correu un excel amb els participants a vilaescacs@gmail.com, fins al dilluns 12 d'octubre de 2026"
+     },
+     {
+      "etiqueta": "Premis",
+      "valor": "3 trofeus a les tres primeres escoles (modalitat GEGANT); trofeu especial Gran Gegant a l'escola amb més punts en total; medalles per a qui guanyi la partida (o faci taules amb negres) i medalla de record per a la resta"
+     },
+     {
+      "etiqueta": "Dubtes",
+      "valor": "WhatsApp al 629 912 888 (Pere Toledano)"
+     }
+    ],
+    "cartell": "",
+    "docs": [
+     {
+      "n": "Bases 2026",
+      "url": "assets/uploads/bases-gegant-escolar-2026.pdf"
+     }
+    ],
+    "url": "",
+    "inscripcio_inici": "",
+    "inscripcio_fins": ""
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "Gegant | 1 | Montagut | Trofeu (8 punts)\nGegant | 2 | Sant Josep de Vilafranca | Trofeu (6½ punts)\nGegant | 3 | Sant Ramon | Trofeu (5 punts)\nGran Gegant | 1 | Montagut | Trofeu especial (12 punts)",
+    "cronica": "El 19è Torneig Gegant d'escacs escolar es va jugar el diumenge 18 d'octubre de 2026 a l'Agrícol degut a que la pluja va impedir fer-lo a la Rambla Sant Francesc de Vilafranca del Penedès, tal com estava previst. Organitzat pel Club d'Escacs Vilafranca amb la col·laboració del Consell Esportiu de l'Alt Penedès i l'Ajuntament de Vilafranca. Hi van participar 19 escoles de Vilafranca i de la comarca, que van competir amb la fórmula Gegant: dues rondes en què puntuen els sis primers jugadors de la llista de forces de cada escola i guanya l'escola que suma més punts.\n\nL'escola Montagut va guanyar el torneig amb 8 punts i es va endur també el trofeu especial Gran Gegant, que premia l'escola amb més punts en total, amb 12. El segon lloc va ser per a Sant Josep de Vilafranca (6½ punts) i el tercer per a Sant Ramon (5 punts). Més endarrere, l'Institut Milà i Fontanals i l'escola Dolors Piera van empatar al quart lloc amb 4 punts i Institut Vilafranca 2 i Sant Elies Vedruna van empatar al sisè amb 3.\n\nEl torneig, que cada any porta els escacs al carrer per fomentar-los entre l'alumnat de la comarca, va tornar a reunir escoles i instituts de molts municipis. Podeu consultar la classificació completa a la pestanya «Després» i les fotos de la jornada a la galeria.",
+    "after": {
+     "text": "",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [
+     {
+      "src": "assets/noticies/18033382031855389-1.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18033382031855389-2.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18033382031855389-3.jpg",
+      "peu": ""
+     }
+    ],
+    "validat": {
+     "premis": true,
+     "cronica": true
+    },
+    "classif_cols": [
+     "#",
+     "Escola",
+     "Gegant",
+     "Gran Gegant"
+    ],
+    "classif_text": "1 | Montagut | 8 | 12\n2 | Sant Josep de Vilafranca | 6½ | 6½\n3 | Sant Ramon | 5 | \n4 | Institut Milà i Fontanals | 4 | \n4 | Dolors Piera | 4 | \n6 | Institut Vilafranca 2 | 3 | \n6 | Sant Elies Vedruna | 3 | \n8 | Balta i Elias | 2 | \n8 | Institut Alt Penedès | 2 | \n8 | Mas i Perera | 2 | \n8 | Institut La Gírada | 2 | \n12 | Jacint Verdaguer | 1 | \n12 | Cristòfor Mestre | 1 | \n12 | Rossend Montané | 1 | \n12 | Sant Josep Sant Sadurní | 1 | \n16 | Pau Boada | ½ | \n17 | Estalella Graells | 0 | \n17 | Epiqueia | 0 | \n17 | Sant Sadurní Vedruna | 0 |"
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

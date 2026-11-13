@@ -1,0 +1,184 @@
+{
+  "qui_som": "El Club d'Escacs Vilafranca és un club creat l'any 1927, on ens reunim els amants d'aquest esport. Estem a Vilafranca del Penedès, participem en competicions federades i no federades, ensenyem escacs a infants i joves i organitzem tornejos propis.",
+  "xifres": [
+    {
+      "valor": "149",
+      "etiqueta": "Persones sòcies"
+    },
+    {
+      "valor": "133",
+      "etiqueta": "Persones federades"
+    },
+    {
+      "valor": "10",
+      "etiqueta": "Monitors i monitores"
+    }
+  ],
+  "que_fem": [
+    {
+      "act": "Tornejos propis",
+      "text": "Obert de Vilafranca, ràpides de la festa major, torneig femení, Gegant escolar i Minicircuit del Penedès.",
+      "url": "#torneigs"
+    },
+    {
+      "act": "Escola d'escacs",
+      "text": "Classes per nivells i edats, amb monitors del club.",
+      "url": "#escola"
+    },
+    {
+      "act": "Els nostres jugadors",
+      "text": "Partides i resultats dels socis, en lligues i tornejos federats i no federats.",
+      "url": "#resultats"
+    }
+  ],
+  "historia": {
+    "intro": "El Club d'Escacs Vilafranca va néixer l'any 1927 per iniciativa d'uns pocs aficionats, de manera informal. Aquest és un breu resum del camí que hem fet fins ara, a les portes del centenari.",
+    "fites": [
+      {
+        "any": "1927",
+        "text": "Neix el club, amb el nom de Penya d'Escacs Vilafranca. Es reuneix a la seu de la Societat de Caçadors, a la Rambla de Sant Francesc."
+      },
+      {
+        "any": "1928",
+        "text": "Es trasllada al Casal (Societat La Principal) i organitza de seguida el primer Campionat Social."
+      },
+      {
+        "any": "1934",
+        "text": "Passa a dir-se Penya d'Escacs de la Societat La Principal."
+      },
+      {
+        "any": "Guerra civil",
+        "text": "L'activitat s'atura quan esclata la guerra."
+      },
+      {
+        "any": "1942",
+        "text": "El club reprèn l'activitat."
+      },
+      {
+        "any": "1948",
+        "text": "S'incorpora a la Federació Catalana, amb el nom de Sección Ajedrez La Principal."
+      },
+      {
+        "any": "1955",
+        "text": "Comença a participar en els campionats de Catalunya per equips, una activitat que encara continua."
+      },
+      {
+        "any": "1960",
+        "text": "Per la Festa Major de la vila s'organitza el primer Open de partides ràpides, que des d'aleshores no s'ha interromput mai."
+      },
+      {
+        "any": "2000",
+        "text": "Es crea el primer Torneig Actiu d'escacs."
+      },
+      {
+        "any": "2006",
+        "text": "Amb la col·laboració de l'Ajuntament de Vilafranca i el Patronat d'Esports, es fa el primer Gegant Escolar."
+      },
+      {
+        "any": "Avui",
+        "text": "Un club amb escola, tornejos propis i competició federada, que s'acosta al centenari."
+      }
+    ]
+  },
+  "junta": {
+    "intro": "Les persones que porten el club. La junta directiva es va elegir a l'assemblea general del 9 de gener de 2026.",
+    "membres": [
+      {
+        "nom": "Pere Toledano Luna",
+        "carrec": "President"
+      },
+      {
+        "nom": "Josep Ràfols Albet",
+        "carrec": "Vicepresident"
+      },
+      {
+        "nom": "Andrea Serradell Villa",
+        "carrec": "Secretària"
+      },
+      {
+        "nom": "Josep Maria Tutusaus Carbó",
+        "carrec": "Tresorer"
+      },
+      {
+        "nom": "Rosa Marrugat Olivella",
+        "carrec": "Vocal"
+      },
+      {
+        "nom": "Elies Ayats Masana",
+        "carrec": "Vocal"
+      },
+      {
+        "nom": "Jordi Torres Palau",
+        "carrec": "Vocal"
+      },
+      {
+        "nom": "Jordi Fernández Davi",
+        "carrec": "Vocal"
+      }
+    ]
+  },
+  "igualtat": {
+    "intro": "El club treballa per obtenir el Distintiu d'Igualtat de la Federació Catalana d'Escacs i vol que els escacs siguin un espai segur per a tothom.",
+    "documents": [
+      {
+        "titol": "Programa d'acollida i suport a nenes i dones",
+        "text": "Document provisional: pendent d'aprovació per la Junta.",
+        "url": "assets/uploads/igualtat-programa-acollida.pdf"
+      },
+      {
+        "titol": "Protocol contra la violència masclista",
+        "text": "Document provisional: pendent d'aprovació per la Junta.",
+        "url": "assets/uploads/igualtat-protocol-violencies-masclistes.pdf"
+      },
+      {
+        "titol": "Pla d'igualtat 2027-2029",
+        "text": "Document provisional: pendent d'aprovació per la Junta.",
+        "url": "assets/uploads/igualtat-pla-igualtat-2027-2029.pdf"
+      }
+    ]
+  },
+  "escola": {
+    "lead": "Fem classes de 17:30 a 19:00 i de 19:00 a 20:30, en grups reduïts adaptats als nivells i edats dels alumnes.",
+    "torns": [
+      {
+        "hora": "17:30 – 19:00",
+        "nom": "Primer torn"
+      },
+      {
+        "hora": "19:00 – 20:30",
+        "nom": "Segon torn"
+      }
+    ],
+    "classes": [
+      {
+        "titol": "Grups reduïts",
+        "text": "Pocs alumnes per grup, perquè el monitor pugui atendre cadascú."
+      },
+      {
+        "titol": "Adaptades als nivells",
+        "text": "Cada alumne treballa al nivell que li toca, de les primeres peces a la partida completa."
+      },
+      {
+        "titol": "Adaptades a les edats",
+        "text": "El ritme i la manera d'explicar canvien segons l'edat del grup."
+      }
+    ],
+    "metode": "Seguim el mètode progressiu Stappen Steps, amb el qual cada alumne progressa al seu ritme però seguint una estructura comuna.",
+    "temes": [
+      "Moviment de les peces",
+      "Tàctica",
+      "Finals",
+      "Obertures",
+      "Com plantejar una partida",
+      "Jugar i competir"
+    ],
+    "competicio": "Els alumnes poden participar tant en competicions federades com no federades, i se'ls recomanaran les més adients en cada moment."
+  },
+  "contacte": {
+    "adreca": "Passatge Alcover, 2",
+    "poblacio": "08720 Vilafranca del Penedès",
+    "correu": "vilaescacs@gmail.com",
+    "instagram_url": "https://www.instagram.com/escacsvilafranca/",
+    "instagram_nom": "@escacsvilafranca"
+  }
+}

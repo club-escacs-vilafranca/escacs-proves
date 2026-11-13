@@ -1,0 +1,113 @@
+{
+ "id": "rapides-obert",
+ "name": "Ràpides de l'Obert",
+ "resum": "Torneig de partides ràpides que tanca l'Obert d'Escacs de Vilafranca, amb el lliurament de premis de tot l'Obert.",
+ "place": "Local Rossend Montané (Sant Miquel d'Olèrdola)",
+ "format": "Ràpides · suís a 8 rondes",
+ "editions": [
+  {
+   "year": "2027",
+   "num": "",
+   "status": "proper",
+   "datesText": "Data pendent de concretar (a final de l'Obert)",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig de partides ràpides que tanca l'Obert. La inscripció és independent de la de l'Obert."
+    ],
+    "facts": [],
+    "docs": [],
+    "url": "inscripcio-prova.html?t=rapides",
+    "cartell": "",
+    "cartell_espai": false
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "cronica": "",
+    "after": {
+     "text": "Resultats no publicats.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": false
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  },
+  {
+   "year": "2026",
+   "num": "",
+   "status": "acabat",
+   "datesText": "Divendres 19 de juny de 2026, a les 21:30 h",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig de partides ràpides que tanca l'Obert, amb el lliurament de premis en acabar."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Sistema",
+      "valor": "Suís a 8 rondes (aparellaments amb Swiss-Manager), vàlid per a Elo FCE i FIDE"
+     },
+     {
+      "etiqueta": "Hora i ritme",
+      "valor": "21:30 · 3' + 2'' per jugada"
+     },
+     {
+      "etiqueta": "Inscripció",
+      "valor": "Formulari fins al dimecres 17 de juny a les 19 h, places limitades; 5 € en metàl·lic abans de la 1a ronda"
+     },
+     {
+      "etiqueta": "Direcció",
+      "valor": "Rosa Marrugat, directora · Sònia Martín, àrbitra principal"
+     },
+     {
+      "etiqueta": "Dubtes",
+      "valor": "Pep Ràfols, 651 77 05 02"
+     }
+    ],
+    "docs": [
+     {
+      "n": "Bases ràpides 2026",
+      "url": "assets/uploads/bases-rapides-obert-2026.pdf"
+     }
+    ],
+    "url": "",
+    "cartell": "assets/uploads/cartell-rapides-obert-2026.jpg",
+    "cartell_espai": false
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "cronica": "Les Ràpides de l'Obert van tancar el torneig el divendres 19 de juny de 2026, a partir de les 21:30, al Local Rossend Montané. Es va jugar a 8 rondes de 3 minuts + 2 segons per jugada, amb 47 participants de 18 clubs. El Club d'Escacs Vilafranca va aportar 25 jugadors, més de la meitat dels inscrits.\n\nEl guanyador va ser l'FM Alexander Domene (Salauris), el mateix que havia guanyat l'Obert, amb 7½ punts sobre 8. Va ser segon Francisco Fernández (Badia), amb 7 punts, i tercer l'FM Laurence E. Webb (Sitges Prado Suburenc), amb 6.\n\nEl millor del club va ser Pere Toledano, sisè amb 5½ punts. Jordi Martínez, Joan Contreras, Lucas Gomes i Sílvia Serradell van fer 5 punts cadascun. Lucas Gomes, Jan Termens i Sílvia Serradell van ser els que més van rendir per sobre del seu Elo, és a dir, els que més punts van sumar respecte als que s'esperaven d'ells. La nit va acabar amb el lliurament de premis de tot l'Obert.",
+    "after": {
+     "text": "Classificació pendent de publicar.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": true
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "actualitzat": "",
- "federats": 1,
+ "federats": 2,
  "socis": null,
  "jugadors": [
   {
@@ -23,6 +23,27 @@
    "ref_fide": 1779,
    "ref_fide_mes": "202511",
    "inc_fide": 57
+  },
+  {
+   "id": "400411",
+   "nom_cr": "SERRADELL VILLA, ANDREA",
+   "nom": "Andrea Serradell",
+   "sexe": "F",
+   "elo": 1544,
+   "elo_rapid": 1341,
+   "var": 0.0,
+   "var_rapid": 0.0,
+   "titol": "",
+   "categoria": "Sènior",
+   "fide": "94761418",
+   "elo_fide": 1500,
+   "elo_fide_rapid": 1402,
+   "ref_fce": 1525,
+   "ref_fce_mes": "202511",
+   "inc_fce": 19,
+   "ref_fide": 1503,
+   "ref_fide_mes": "202511",
+   "inc_fide": -3
   }
  ],
  "inc_des": "2025-11-01"

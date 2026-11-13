@@ -1,0 +1,36 @@
+name: PROVA · Actualitzar el calendari de la FCE
+# Cada setmana (i quan tu ho demanis): només el calendari general i el de Barcelona. La FCE publica el seu calendari com a imatges. Es baixen, es llegeixen amb OCR (Tesseract)
+# i els esdeveniments nous s'afegeixen al calendari com a "Pendent de validar" (es validen des del CMS, a «Oficials (federacions)»).
+# Una imatge només es torna a llegir si ha canviat. Mai no es modifica ni s'esborra el que ja hi ha.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fce:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-cat
+      - run: pip install opencv-python-headless pytesseract numpy
+      - run: python3 -u tools/fce_calendari.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-xifrats-${{ github.workflow }}
+          path: resultats.tgz.gpg
+          if-no-files-found: ignore
+          retention-days: 14

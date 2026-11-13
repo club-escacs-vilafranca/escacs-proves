@@ -1,0 +1,67 @@
+name: PROVA · Actualitzar jugadors i resultats
+# Dos modes, per estalviar minuts d'Actions:
+#  - DESCOBRIMENT (dilluns i dijous): llegeix la llista del club a la FCE, els codis FIDE i busca a Chess-Results els torneigs nous
+#    dels últims 30 dies de cada jugador.
+#  - SEGUIMENT (la resta de dies): no busca torneigs nous; només torna a llegir els ja trobats dels últims 30 dies (els que encara es juguen).
+# Si una font falla, es conserven les dades anteriors. Manualment es pot triar el mode i la data d'inici.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "descobriment (busca torneigs nous) o seguiment (només relegeix els ja trobats)"
+        type: choice
+        options: [descobriment, seguiment]
+        default: descobriment
+      des:
+        description: "Torneigs acabats des de (AAAA-MM-DD). Buit = des de l'1 de gener de l'any en curs. Per anar enrere posa una data anterior (p. ex. 2026-06-01); el que és anterior es conserva"
+        default: ""
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  actualitza:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install beautifulsoup4
+      - name: Actualitza
+        run: |
+          DES="${{ inputs.des }}"
+          MODE="${{ inputs.mode }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            DES=$(date -d '30 days ago' +%F)
+            [ "${{ github.event.schedule }}" = "17 3 * * 1,4" ] && MODE=descobriment || MODE=seguiment
+          fi
+          [ -z "$DES" ] && DES=$(date +%Y)-01-01
+          EXTRA=""; [ "$MODE" = "seguiment" ] && EXTRA="--seguiment"
+          python3 -u tools/jugadors.py --des "$DES" $EXTRA | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Afegeix al calendari els tornejos on han jugat jugadors del club i que encara no hi són
+        run: python3 -u tools/calendari_auto.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Avisa dels tornejos nous que potser no valen per a l'Elo
+        run: python3 -u tools/avis_elo.py | tee -a "$GITHUB_STEP_SUMMARY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Avisa dels tornejos sense data límit d'inscripció
+        run: python3 -u tools/avis_inscripcio.py | tee -a "$GITHUB_STEP_SUMMARY"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-xifrats-${{ github.workflow }}
+          path: resultats.tgz.gpg
+          if-no-files-found: ignore
+          retention-days: 14

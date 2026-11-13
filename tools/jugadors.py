@@ -786,7 +786,7 @@ def main(des="2026-09-01"):
     # 1. llista del club
     try:
         club = llista_club()
-        club = [x for x in club if x.get('id') == '382950'] if os.environ.get('NOMES_PROVA') else club     # REPO DE PROVES: només la jugadora autoritzada
+        club = [x for x in club if x.get('id') in ('382950', '400411')] if os.environ.get('NOMES_PROVA') else club     # REPO DE PROVES: només les dues jugadores autoritzades
         print(f"FCE: {len(club)} jugadors del club")
     except Exception as e:
         print("FCE: no s'ha pogut llegir la llista (es conserva l'anterior):", e)

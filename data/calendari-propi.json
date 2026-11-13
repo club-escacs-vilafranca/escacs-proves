@@ -1,0 +1,191 @@
+{
+  "events": [
+    {
+      "name": "Obert de Vilafranca 2027 (dates previstes)",
+      "sch": {
+        "kind": "setmanal",
+        "start": "2027-04-02",
+        "end": "",
+        "weeks": 11,
+        "dates": []
+      },
+      "place": "Local Rossend Montané (Sant Miquel d'Olèrdola)",
+      "format": "Sistema suís, 8 rondes · 90 min + 30 s",
+      "url": "",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "e3"
+    },
+    {
+      "name": "Minicircuit del Penedès · Gelida",
+      "sch": {
+        "kind": "dia",
+        "start": "2026-09-27",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Gelida · Sala de joc, c/ Major, 16",
+      "format": "Torneig del Minicircuit del Penedès",
+      "url": "#torneig/minicircuit-penedes/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "mc2026-09-27"
+    },
+    {
+      "name": "Minicircuit del Penedès · Ordal (Subirats)",
+      "sch": {
+        "kind": "dia",
+        "start": "2026-11-08",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Ordal (Subirats) · Sala d'actes de l'Ateneu Ordalenc",
+      "format": "Torneig del Minicircuit del Penedès",
+      "url": "#torneig/minicircuit-penedes/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "mc2026-11-08"
+    },
+    {
+      "name": "Minicircuit del Penedès · Santa Margarida i els Monjos",
+      "sch": {
+        "kind": "dia",
+        "start": "2026-11-15",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Santa Margarida i els Monjos",
+      "format": "Torneig del Minicircuit del Penedès",
+      "url": "#torneig/minicircuit-penedes/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "mc2026-11-15"
+    },
+    {
+      "name": "Minicircuit del Penedès · Sant Pau d'Ordal",
+      "sch": {
+        "kind": "dia",
+        "start": "2026-11-22",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Sant Pau d'Ordal",
+      "format": "Torneig del Minicircuit del Penedès",
+      "url": "#torneig/minicircuit-penedes/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "mc2026-11-22"
+    },
+    {
+      "name": "Minicircuit del Penedès · Vilafranca del Penedès",
+      "sch": {
+        "kind": "dia",
+        "start": "2026-12-13",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Vilafranca del Penedès",
+      "format": "Torneig del Minicircuit del Penedès",
+      "url": "#torneig/minicircuit-penedes/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "mc2026-12-13"
+    },
+    {
+      "name": "Torneig de Nadal 2026 (dates previstes)",
+      "sch": {
+        "kind": "dates",
+        "start": "2026-12-21",
+        "end": "2026-12-23",
+        "weeks": null,
+        "dates": [
+          "2026-12-21",
+          "2026-12-22",
+          "2026-12-23"
+        ]
+      },
+      "place": "Seu del club",
+      "format": "Suís · 7 rondes · 30 min + 5 s",
+      "url": "#torneig/nadal/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "nadal-2026"
+    },
+    {
+      "name": "Torneig solidari de la Marató 2026 (data prevista)",
+      "sch": {
+        "kind": "dia",
+        "start": "2027-01-03",
+        "end": "",
+        "weeks": null,
+        "dates": []
+      },
+      "place": "Local Rossend Montané (Sant Miquel d'Olèrdola)",
+      "format": "Suís · 6 rondes · 15 min",
+      "url": "#torneig/marato-tv3/2026",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "marato-tv3-2026"
+    },
+    {
+      "name": "Torneig de final de curs 2027 (dates previstes)",
+      "sch": {
+        "kind": "dates",
+        "start": "2027-06-21",
+        "end": "2027-06-22",
+        "weeks": null,
+        "dates": [
+          "2027-06-21",
+          "2027-06-22"
+        ]
+      },
+      "place": "Seu del club",
+      "format": "Suís · grups per nivell",
+      "url": "#torneig/final-de-curs/2027",
+      "bases": "",
+      "detalls": [],
+      "status": "ok",
+      "source": "manual",
+      "scope": "CAT",
+      "type": "propi",
+      "id": "final-de-curs-2027"
+    }
+  ]
+}

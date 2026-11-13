@@ -1,0 +1,110 @@
+{
+ "id": "final-de-curs",
+ "name": "Torneig de final de curs",
+ "resum": "Torneig d'escacs de final de curs del club, després de Sant Joan, obert a tothom i amb grups per nivell.",
+ "place": "Per confirmar",
+ "format": "Suís · grups per nivell",
+ "editions": [
+  {
+   "year": "2027",
+   "status": "proper",
+   "datesText": "Dates per confirmar (després de Sant Joan de 2027)",
+   "num": "",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig d'escacs de final de curs del Club d'Escacs Vilafranca, obert a tothom, amb el mateix format que el torneig de Nadal però després de Sant Joan. Es fan grups segons el nivell de joc.",
+     "Les dates, el ritme i la inscripció es publicaran quan estiguin confirmats."
+    ],
+    "facts": [],
+    "cartell": "",
+    "docs": [],
+    "url": "",
+    "inscripcio_inici": "",
+    "inscripcio_fins": "",
+    "cartell_espai": true
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "",
+    "classif_cols": [],
+    "classif_text": "",
+    "cronica": "",
+    "after": {
+     "text": "Resultats no publicats.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": false
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "final-de-curs-2027",
+    "circuit": false
+   }
+  },
+  {
+   "year": "2026",
+   "status": "acabat",
+   "datesText": "25 i 26 de juny, a les 16:30",
+   "num": "",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig d'escacs de final de curs del Club d'Escacs Vilafranca, obert a tots els socis del club."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Ritme i rondes",
+      "valor": "7 rondes · 30 min + 5 s per jugada"
+     },
+     {
+      "etiqueta": "Grups",
+      "valor": "Es fan grups segons el nivell de joc."
+     },
+     {
+      "etiqueta": "Inscripció",
+      "valor": "Per WhatsApp a Rosa Marrugat fins al 19 de juny. Límit de jugadors."
+     }
+    ],
+    "cartell": "",
+    "docs": [],
+    "url": "",
+    "inscripcio_inici": "2026-06-01",
+    "inscripcio_fins": "2026-06-19"
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "",
+    "classif_cols": [],
+    "classif_text": "",
+    "cronica": "",
+    "after": {
+     "text": "Resultats no publicats.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": false
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

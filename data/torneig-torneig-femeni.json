@@ -1,0 +1,40 @@
+{
+ "id": "torneig-femeni",
+ "name": "Torneig femení",
+ "resum": "Una tarda d'escacs i dinar compartit.",
+ "place": "Seu del club",
+ "format": "Una tarda, amb dinar compartit",
+ "editions": [
+  {
+   "year": "2026",
+   "num": "",
+   "status": "proper",
+   "datesText": "Data per confirmar, 2026",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Cada any, a finals de desembre o començaments de gener, el club organitza un torneig femení: una tarda de partides al club seguida d'un dinar compartit."
+    ],
+    "facts": [],
+    "docs": [
+     {
+      "n": "Bases 2026",
+      "url": ""
+     }
+    ],
+    "url": ""
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "after": null
+   },
+   "avancat": {
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

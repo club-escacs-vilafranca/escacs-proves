@@ -1,0 +1,37 @@
+name: PROVA · Actualitzar resultats de la FFE (França)
+# Busca als tornejos homologats FIDE de la federació francesa (echecs.asso.fr) els jugadors del club (per nom + bandera ESP; la FFE no publica l'ID FIDE)
+# (dos cops per setmana, per estalviar minuts d'Actions) i desa els resultats a data/ffe-jugadors.json. Dilluns i dijous revisa els darrers 30 dies; manualment es pot indicar una data d'inici.
+on:
+  workflow_dispatch:
+    inputs:
+      des:
+        description: "Data d'inici (AAAA-MM-DD); buit = revisió recent (30 dies)"
+        required: false
+        default: ""
+permissions:
+  contents: read
+jobs:
+  ffe:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          if [ "${{ github.event_name }}" = "push" ]; then for t in "2026-02-01 2026-04-30" "2026-05-01 2026-07-31" "2026-08-01 2026-12-31"; do python3 -u tools/ffe.py $t | tee -a "$GITHUB_STEP_SUMMARY"; git add data; git -c user.name=github-actions -c user.email=a@b commit -qm "FFE: tram $t" || true; done; elif [ -n "${{ inputs.des }}" ]; then python3 -u tools/ffe.py "${{ inputs.des }}" | tee -a "$GITHUB_STEP_SUMMARY"; else python3 -u tools/ffe.py --recent | tee -a "$GITHUB_STEP_SUMMARY"; fi
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-xifrats-${{ github.workflow }}
+          path: resultats.tgz.gpg
+          if-no-files-found: ignore
+          retention-days: 14

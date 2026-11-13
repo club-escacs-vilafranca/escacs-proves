@@ -1,0 +1,606 @@
+{
+ "tornejos": [
+  {
+   "tnr": "1452552",
+   "nom": "XLII Open internacional Martorell 2026 Grup C",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1452550",
+   "nom": "XLII Open Internacional Martorell 2026 Grup B",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1451113",
+   "nom": "XLII Open Internacional Martorell 2026 Grup A",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1533385",
+   "nom": "Campionat Territorial de Barcelona Promoció 2026 - Sub 12-Sub 14",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1533383",
+   "nom": "Campionat Territorial de Barcelona Promoció 2026 - Sub 10",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1533381",
+   "nom": "Campionat Territorial de Barcelona Promoció 2026 - Sub 8",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1507969",
+   "nom": "XXVIII Obert d'Escacs de Santa Margarida de Montbui - Memorial Joan LLorens",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-fide-world-championship-2026-g13",
+   "nom": "FIDE World Championship 2026 - G13",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1508657",
+   "nom": "Campionat de Catalunya d'Equips per Edats 2026 - Sub14",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1508653",
+   "nom": "Campionat de Catalunya d'Equips per Edats 2026 - Sub12",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1508649",
+   "nom": "Campionat de Catalunya d'Equips per Edats 2026 - Sub10",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1508643",
+   "nom": "Campionat de Catalunya d'Equips per Edats 2026 - Sub8",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1498020",
+   "nom": "Campionat de Catalunya Llampec per Equips 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Blitz"
+  },
+  {
+   "tnr": "1492846",
+   "nom": "Obert d'Escacs de Gelida. 4rt. Mini Circuit Alt Penedès - Grup Sub12",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1492840",
+   "nom": "Obert d'Escacs de Gelida. 4rt. Mini Circuit Alt Penedès - Grup General",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1500936",
+   "nom": "Minicopa Territorial de Barcelona 2026 (sub20)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1497745",
+   "nom": "Minicopa Territorial de Barcelona 2026 (sub14)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1497743",
+   "nom": "Minicopa Territorial de Barcelona 2026 (sub12)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1497718",
+   "nom": "Minicopa Territorial de Barcelona 2026 (sub10)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1497715",
+   "nom": "Minicopa Territorial de Barcelona 2026 (sub8)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1484699",
+   "nom": "32e Obert Internacional d'Actius de Vallfogona",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1455552",
+   "nom": "IX Open de Puigpelat 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1474916",
+   "nom": "IX Torneig Llampec Mare de Deu de la Serra 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Blitz"
+  },
+  {
+   "tnr": "1478291",
+   "nom": "Torneig infantil Festa Major Ripollet 2026",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1389040",
+   "nom": "XXVII Open Internacional de Sants - Ciutat de Barcelona - Grup C",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1474891",
+   "nom": "II Torneig Chess-Pizza Montblanc 2026",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "i64-i-torneo-internacional-de-ajedrez-nubiaegip",
+   "nom": "I Torneo Internacional de Ajedrez Nubiaegip",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1478663",
+   "nom": "5° Festival Bella Italia Lignano Sabbiadoro_Torneo_A",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1478662",
+   "nom": "5° Festival Bella Italia Lignano Sabbiadoro_Torneo_C",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-iii-torneo-internacional-el-campello",
+   "nom": "III Torneo Internacional El Campello",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1460890",
+   "nom": "V TORNEIG NOCTURN D´ESTIU CANYELLES",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1428313",
+   "nom": "XIII Obert Llampec Torredembarra 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Blitz"
+  },
+  {
+   "tnr": "1406359",
+   "nom": "XXXV Festival d'Escacs La Pobla de Lillet - Grup B",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-campeonato-de-espana-rapido-sub-8-2026",
+   "nom": "Campeonato de España Rápido 2026 Sub-8",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "i64-campeonato-de-espana-rapido-sub-12-2026",
+   "nom": "Campeonato de España Rápido 2026 Sub-12",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1333186",
+   "nom": "50 Open Internacional d'Escacs Vila de Sitges Grup C",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1333184",
+   "nom": "50 Open Internacional d'Escacs Vila de Sitges Grup B",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1431067",
+   "nom": "VI Memorial Joaquim Català - Vila de Súria",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-campeonato-de-espana-sub-12-2026",
+   "nom": "Campeonato de España 2026 Sub-12",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1384253",
+   "nom": "XLV OPEN INTERNACIONAL \"VILLA DE BENASQUE\"",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-campeonato-de-espana-sub-10-2026-1",
+   "nom": "Campeonato de España 2026 Sub-10",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1337270",
+   "nom": "VI Open Internacional Vila del Vendrell - Memorial Josep Maria Pellicer",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1447768",
+   "nom": "XIII Torneig de ràpides Festa Major Pallejà 2026",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1389058",
+   "nom": "XXVI Open Internacional d'Escacs de Torredembarra 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "i64-campeonato-de-espana-sub-8-2026",
+   "nom": "Campeonato de España 2026 Sub-8",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1392650",
+   "nom": "IV Circuit Junior Costa Brava - Gran Final (Platja d'Aro)",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1374031",
+   "nom": "XVI Memorial Josep Lorente",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1363460",
+   "nom": "XV Torneig Obert CIUTAT HOSPITALET (In memoriam IX- Juan Ponce i III - Francisco Arroyo)",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1401537",
+   "nom": "Rapides del XVIIe Obert d'Escacs Vilafranca 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1344906",
+   "nom": "XX Obert Ciutat de Sant Adria 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1424364",
+   "nom": "Final Nacional d'Escacs - JEEC - Curs 2025-2026 Categoria Cadet-Juvenil",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1424360",
+   "nom": "Final Nacional d'Escacs - JEEC - Curs 2025-2026 Categoria Infantil",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1423820",
+   "nom": "Final Nacional d'Escacs - JEEC - Curs 2025-2026 Categoria Benjamí",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1340586",
+   "nom": "XVIIe Obert d'Escacs Vilafranca 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1427535",
+   "nom": "Calculin d'Or - Fase Final Off",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1427533",
+   "nom": "Calculin d'Or - Fase Final S8",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1427531",
+   "nom": "Calculin d'Or - Fase Final S10",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1385400",
+   "nom": "XVIII OPEN INTERNACIONAL MEMORIAL EZEQUIEL MARTIN",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1364708",
+   "nom": "XXVI Torneig Obert Escacs La Passio  Esparreguera",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1385358",
+   "nom": "XXII Obert Escacs Actius - Vila de Santa Coloma de Queralt",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1421187",
+   "nom": "XIII Campionat d'Escacs Júnior (Gelateria Italiana)",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1405631",
+   "nom": "XL Campionat de Catalunya de Veterans 2026 - Grup 65",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1379161",
+   "nom": "XIII Obert d'Escacs Calculin - GRUP BLAU Off",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1379159",
+   "nom": "XIII Obert d'Escacs Calculin - GRUP BLAU",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1378177",
+   "nom": "XII Open Int. Escacs Actius Ciutat de Rubi - Memorial Jesus Fortes",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1394304",
+   "nom": "I Torneig Open Internacional de Granollers - Grup B",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1349779",
+   "nom": "Open Internacional Cidade de Coimbra Queima das Fitas 2026",
+   "fce": "no",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375781",
+   "nom": "VIII Open Internacional d’Escacs Actius Fundació Joviat",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1381540",
+   "nom": "Torneig d'Escacs Solidari Drac Artcai 2026 El Catllar",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1375721",
+   "nom": "Campionat de Catalunya Individual per Edats Sub18",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375713",
+   "nom": "Campionat de Catalunya Individual per Edats Sub14",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375711",
+   "nom": "Campionat de Catalunya Individual per Edats Sub12",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375710",
+   "nom": "Campionat de Catalunya Individual per Edats Sub10",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375709",
+   "nom": "Campionat de Catalunya Individual per Edats Sub8",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1375627",
+   "nom": "Torneig de partides llampec (Campionat de Catalunya Individual per edats)",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Blitz"
+  },
+  {
+   "tnr": "1369468",
+   "nom": "IV TORNEIG FEMENI PER EQUIPS 2026",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1312619",
+   "nom": "II Obert d'Hivern A E Rubinenca 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1346352",
+   "nom": "Torneig Rapid Carnaval 2026",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  },
+  {
+   "tnr": "1328521",
+   "nom": "Fases Prèvies Anoia - Alt Penedès - Garraf SUB16",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1328518",
+   "nom": "Fases Prèvies Anoia - Alt Penedès - Garraf SUB14",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1328514",
+   "nom": "Fases Prèvies Anoia - Alt Penedès - Garraf SUB12",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1328511",
+   "nom": "Fases Prèvies Anoia - Alt Penedès - Garraf SUB10",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1328264",
+   "nom": "Fases Prèvies Anoia - Alt Penedès - Garraf SUB8",
+   "fce": "si",
+   "fide": "no",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1323862",
+   "nom": "Copa Catalana Territorial de Barcelona 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Standard"
+  },
+  {
+   "tnr": "1328579",
+   "nom": "XI CAMPIONAT LLAMPEC PER PARELLES MIXTES 2026",
+   "fce": "si",
+   "fide": "si",
+   "modalitat": "Blitz"
+  },
+  {
+   "tnr": "1296573",
+   "nom": "IV Actiu de Reis de Sant Joan de Vilatorrada 2026 (Grup B)",
+   "fce": "no",
+   "fide": "no",
+   "modalitat": "Rapid"
+  }
+ ]
+}

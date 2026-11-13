@@ -1,0 +1,803 @@
+{
+ "events": [
+  {
+   "id": "feda1",
+   "name": "CTO España Centros Escolares",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Guardamar del Segura (VAL)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-24",
+    "end": "2026-04-26",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda2",
+   "name": "CESA 2026",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Padrón (GAL)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-06-30",
+    "end": "2026-07-03",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda3",
+   "name": "CTO España Indiv Sub-8",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Vícar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-02",
+    "end": "2026-07-06",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda4",
+   "name": "CTO España Indiv Sub-10",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Vícar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-07",
+    "end": "2026-07-12",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda5",
+   "name": "CTO España Parejas Mixtas Rápido",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Benasque (ARA)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-07-11",
+    "end": "",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda6",
+   "name": "CTO España Indiv Sub-12",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Vícar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-13",
+    "end": "2026-07-18",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda7",
+   "name": "CTO España Indiv Sub-14",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Vícar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-19",
+    "end": "2026-07-24",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda8",
+   "name": "CTO España Indiv Sub-16",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Vícar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-25",
+    "end": "2026-07-30",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda9",
+   "name": "CTO España Rápido Sub-8/18",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Torre Pacheco (MUR)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-01",
+    "end": "2026-08-02",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda10",
+   "name": "CTO España Juvenil Sub-18",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Ciudad Real (CTM)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-03",
+    "end": "2026-08-08",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda11",
+   "name": "CECLUB Segunda División Norte",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Oviedo (AST)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-09",
+    "end": "2026-08-12",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda12",
+   "name": "CECLUB Segunda División Sur",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Linares (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-11",
+    "end": "2026-08-14",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda13",
+   "name": "CTO España Individual Relámpago Absoluto",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Mengíbar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-08-15",
+    "end": "",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda14",
+   "name": "CTO España Individual Rápido Absoluto",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Mengíbar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-08-16",
+    "end": "",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda15",
+   "name": "CTO España Individual Absoluto",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Linares (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-17",
+    "end": "2026-08-25",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda16",
+   "name": "CECLUB Primera División",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Linares (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-27",
+    "end": "2026-09-02",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda17",
+   "name": "CTO España Indiv Tramos 1700-2000-2300",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Hoznayo (CNT)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-30",
+    "end": "2026-09-04",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda18",
+   "name": "CTO España Individual Inclusivo",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Roquetas de Mar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-09-25",
+    "end": "2026-09-27",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda19",
+   "name": "CTO España Individual Veteranos",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Roquetas de Mar (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-10-02",
+    "end": "2026-10-10",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda20",
+   "name": "CTO España Rápido por Equipos",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Albacete (CTM)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-10-11",
+    "end": "2026-10-12",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "feda23",
+   "name": "CECLUB División de Honor",
+   "type": "oficial",
+   "scope": "ESP",
+   "place": "Marbella (AND)",
+   "format": "Competició oficial de la FEDA",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-20",
+    "end": "2026-11-26",
+    "weeks": null
+   },
+   "source": "feda",
+   "status": "ok",
+   "url": "https://feda.org/feda2k16/calendario-feda-2025/"
+  },
+  {
+   "id": "fce1",
+   "name": "Campionat de Catalunya Llampec de Parelles Mixtes",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Llampec",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-01-10",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce2",
+   "name": "Lliga Catalana Divisió d'Honor",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-01-17",
+    "end": "2026-04-11",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce3",
+   "name": "Lliga Catalana, resta de divisions",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-01-18",
+    "end": "2026-03-15",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce4",
+   "name": "Campionat de Catalunya Individual per Edats - Sub-8",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-03-28",
+    "end": "2026-03-30",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce5",
+   "name": "Campionat de Catalunya Individual per Edats - Sub-10 a Sub-20",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-03-28",
+    "end": "2026-04-02",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce6",
+   "name": "Lliga Catalana - Fases Finals i Playoff",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-12",
+    "end": "2026-05-24",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce7",
+   "name": "Final Copa Catalana 2025",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-04-26",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce8",
+   "name": "Campionat de Catalunya Individual Absolut",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-05-09",
+    "end": "2026-05-16",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce9",
+   "name": "Campionat de Catalunya de Veterans +50 anys +65 anys",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-05-09",
+    "end": "2026-05-16",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce10",
+   "name": "Campionat de Catalunya per Equips d'Escoles",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-05-23",
+    "end": "2026-05-24",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce11",
+   "name": "Campionat de Catalunya Individual Blitz online",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Blitz - Online",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-24",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce12",
+   "name": "Lliga Catalana Final Sub-12",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-31",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce13",
+   "name": "Open Internacional de Sants - Ciutat de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-21",
+    "end": "2026-08-30",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce14",
+   "name": "Festa Catalana i Campionat de Catalunya Llampec per Equips",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Llampec",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-09-27",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce15",
+   "name": "Campionat de Catalunya d'Equips per Edats",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-10-10",
+    "end": "2026-10-12",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce16",
+   "name": "Intergeneracional Matx Fèmines-Veterans",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-10-24",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce17",
+   "name": "Campionat de Catalunya Actius per Edats - Memorial Garcia Ilundain",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-12-12",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce18",
+   "name": "Obert - Memorial Garcia Ilundain",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-12-13",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fce19",
+   "name": "Campionat de Catalunya Individual Femení",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Catalunya",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-27",
+    "end": "2026-12-29",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/competicio/competicions/calendaris-oficial-fce"
+  },
+  {
+   "id": "fcebcn1",
+   "name": "Copa Catalana Territorial de Barcelona - Memorial Beatriz Alfonso",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-01-11",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn2",
+   "name": "Fases prèvies per Edats Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-01-24",
+    "end": "2026-02-28",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn3",
+   "name": "Campionat de Veterans Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-02-03",
+    "end": "2026-03-26",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn4",
+   "name": "Campionat Individual per Edats Actius Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-03-22",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn5",
+   "name": "Minicopa Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Actiu",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-09-20",
+    "end": "",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn6",
+   "name": "Campionat Absolut Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "setmanal",
+    "start": "2026-10-04",
+    "end": "",
+    "weeks": 9
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  },
+  {
+   "id": "fcebcn7",
+   "name": "Campionat de Promoció Territorial de Barcelona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "Delegació de Barcelona",
+   "format": "Ritme de joc: Tradicional",
+   "sch": {
+    "kind": "setmanal",
+    "start": "2026-11-08",
+    "end": "",
+    "weeks": 3
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs.cat/index.php/federacio/territorial-bcn/calendari-territorial-bcn"
+  }
+ ]
+}

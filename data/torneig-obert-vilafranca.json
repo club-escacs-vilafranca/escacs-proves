@@ -1,0 +1,178 @@
+{
+ "id": "obert-vilafranca",
+ "name": "Obert de Vilafranca",
+ "resum": "Torneig obert del club, els divendres al vespre.",
+ "place": "Local Rossend Montané (Sant Miquel d'Olèrdola)",
+ "format": "Sistema suís, 8 rondes, grup únic · 90 min + 30 s",
+ "editions": [
+  {
+   "year": "2027",
+   "status": "proper",
+   "datesText": "Del 2 d'abril a l'11 de juny de 2027 (dates previstes, pendents de concretar)",
+   "num": "",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig obert del Club d'Escacs Vilafranca: es juga els divendres a les 21:30, a 90 minuts més 30 segons per jugada.",
+     "Les dates són les previstes i es confirmaran. Les bases i l'enllaç d'inscripció es publicaran aviat."
+    ],
+    "facts": [],
+    "cartell": "",
+    "cartell_espai": false,
+    "docs": [
+     {
+      "n": "Bases 2027",
+      "url": ""
+     }
+    ],
+    "url": "inscripcio-prova.html?t=obert",
+    "inscripcio_inici": "",
+    "inscripcio_fins": ""
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "",
+    "cronica": "",
+    "after": null,
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": false
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "e3",
+    "circuit": false
+   }
+  },
+  {
+   "year": "2026",
+   "status": "acabat",
+   "datesText": "Del 10 d'abril al 12 de juny de 2026",
+   "num": "",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "XVII Obert d'Escacs Vilafranca, organitzat pel Club d'Escacs Vilafranca amb la col·laboració de l'Ajuntament d'Olèrdola. Torneig homologat per la Federació Catalana d'Escacs, vàlid per a Elo FCE i FIDE, i puntuable pel IV Mini-circuit Territorial de Barcelona."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Sistema",
+      "valor": "Suís a 8 rondes"
+     },
+     {
+      "etiqueta": "Dies de joc",
+      "valor": "Divendres 10, 17 i 24 d'abril; 8, 15 i 29 de maig; 5 i 12 de juny (l'1 i el 22 de maig es descansa)"
+     },
+     {
+      "etiqueta": "Hora i ritme",
+      "valor": "21:30 · 90 minuts per jugador + 30 segons per jugada"
+     },
+     {
+      "etiqueta": "Sala",
+      "valor": "Local Rossend Montané, c/ Moreneta s/n, Sant Miquel d'Olèrdola (amb servei de bar)"
+     },
+     {
+      "etiqueta": "Desempats",
+      "valor": "Encontre directe; Buchholz tallat -1; progressiu acumulatiu; Buchholz mitjà 1; sorteig"
+     },
+     {
+      "etiqueta": "Inscripció",
+      "valor": "Fins al 8 d'abril a les 18 h, places limitades. General/sèniors 30 €; menors de 18 i majors de 65 anys 25 €; jugadors del C.E. Vilafranca 20 €; gratuïta amb Elo català superior a 2300"
+     },
+     {
+      "etiqueta": "Descomptes",
+      "valor": "Els clubs visitants amb mínim 5 jugadors sèniors inscrits tenen 5 € de descompte per jugador (no compten els no presentats a la 1a ronda)"
+     },
+     {
+      "etiqueta": "Direcció",
+      "valor": "Rosa Marrugat, directora del torneig · Sònia Martín, àrbitra principal"
+     },
+     {
+      "etiqueta": "Lliurament de premis",
+      "valor": "Divendres 19 de juny, en acabar el torneig de ràpides. Els premis no són acumulables i es reparteixen per Elo català (trams A–D, premis especials: sub-16, més grans de 65, local i femení)"
+     }
+    ],
+    "cartell": "assets/uploads/cartell-obert-vilafranca-2026.jpg",
+    "cartell_espai": false,
+    "docs": [
+     {
+      "n": "Bases 2026",
+      "url": "https://drive.google.com/file/d/14fFzqn13VtcGcZ6sl-K8xfx26pzjG8mZ/view?usp=drive_link"
+     }
+    ],
+    "url": "",
+    "inscripcio_inici": "",
+    "inscripcio_fins": ""
+   },
+   "durant": {
+    "cr": "https://s3.chess-results.com/tnr1340586.aspx?lan=9",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "Classificació general | 1 | Alexander Domene | 400 € + trofeu\nClassificació general | 2 | Francisco Fernandez | 200 € + trofeu\nClassificació general | 3 | Marcal Gomez | 100 € + trofeu\nClassificació general | 4 | Francisco Javier Garcia | 60 € + trofeu\nClassificació general | 5 | David Arturo Oropeza | 50 € + trofeu\nTram A (2000–2149) | 1 | Joan Vilella | 50 € + trofeu\nTram A (2000–2149) | 2 | Juan Bosco Prats | 30 € + trofeu\nTram A (2000–2149) | 3 | Angel Soteras | Trofeu\nTram B (1850–1999) | 1 | Sergio Arranz | 50 € + trofeu\nTram B (1850–1999) | 2 | Ismael Toribio | 30 € + trofeu\nTram B (1850–1999) | 3 | Eric Saldana | Trofeu\nTram C (1700–1849) | 1 | Jordi Cort | 50 € + trofeu\nTram C (1700–1849) | 2 | Alberto Arroyo | 30 € + trofeu\nTram C (1700–1849) | 3 | Noel Quintana | Trofeu\nTram D (fins a 1699) | 1 | Hiroshi Jose Perez-Aranda | 50 € + trofeu\nTram D (fins a 1699) | 2 | Josep M Tutusaus | 30 € + trofeu\nTram D (fins a 1699) | 3 | Salim Saade | Trofeu\nSub-16 | 1 | Marti Marin | Trofeu\nMajor de 65 anys | 1 | Salvador Lluverol | Trofeu\nLocal | 1 | Josep Vinas | Trofeu\nFemení | 1 | Silvia Serradell | Premi",
+    "cronica": "El XVII Obert d'Escacs de Vilafranca es va jugar els divendres a la nit, del 10 d'abril al 12 de juny de 2026, al Local Rossend Montané de Sant Miquel d'Olèrdola. Hi van participar 104 jugadors de 23 clubs, amb un nivell notable: l'Elo mitjà dels inscrits va ser de 1839 i hi van competir tres Mestres FIDE (FM) i dos Candidats a Mestre (CM). Hi havia cinc dones i divuit jugadors menors de 18 anys. Els 39 jugadors del Club d'Escacs Vilafranca van ser el 38 % dels inscrits, i van sumar 130 punts entre tots.\n\nLa victòria va ser per a l'FM Alexander Domene (Salauris), que va guanyar totes les partides (8 sobre 8), també la de taula 1 a l'última ronda contra l'FM Xavier Avila. El segon lloc va ser per a Francisco Fernández (Badia) amb 6½ punts, i el tercer per al CM Marçal Gómez (Lira Vendrellenca), també amb 6½. Francisco Javier García (Badia) i David Arturo Oropeza (Vilafranca) van completar el top 5 amb 6 punts.\n\nOropeza, del Club d'Escacs Vilafranca, va ser el millor del club: va acabar cinquè, amb 1,6 punts per sobre del que li corresponia pel seu Elo. Salvador Lluverol va ser dotzè (5½ punts) i va guanyar el premi de major de 65 anys, i Josep Viñas va rebre el premi local. A la categoria de menys Elo (tram D), el club va fer doblet amb el primer i el segon premi (Hiroshi Pérez-Aranda i Josep M. Tutusaus) i Sílvia Serradell va guanyar el premi femení. En conjunt, els jugadors del club van sumar 130 punts, un molt bon paper com a amfitrions d'un torneig molt disputat. El torneig va acabar el 19 de juny amb les ràpides i el lliurament de premis.",
+    "after": {
+     "text": "Torneig de ràpides i lliurament de premis: divendres 19 de juny de 2026.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [
+     {
+      "src": "assets/noticies/18087053216111324-1.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-2.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-3.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-4.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-5.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-6.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-7.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-8.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-9.jpg",
+      "peu": ""
+     },
+     {
+      "src": "assets/noticies/18087053216111324-10.jpg",
+      "peu": ""
+     }
+    ],
+    "validat": {
+     "premis": true,
+     "cronica": true
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "",
+    "circuit": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "nadal",
+  "name": "Torneig de Nadal",
+  "resum": "Torneig d'escacs de Nadal del club, obert a tothom i amb grups per nivell.",
+  "place": "Per confirmar",
+  "format": "Suís · 7 rondes · 30 min + 5 s",
+  "editions": [
+    {
+      "year": "2026",
+      "status": "proper",
+      "datesText": "Dates per confirmar (previsió: 21, 22, 28 i 29 de desembre de 2026, a les 16:30 h)",
+      "num": "",
+      "jornades": [],
+      "abans": {
+        "text": [
+          "Torneig d'escacs de Nadal del Club d'Escacs Vilafranca, obert a tots els socis.",
+          "Les bases i les dates definitives es publicaran quan estiguin confirmades. L'edició anterior es va jugar a 7 rondes de 30 min + 5 s."
+        ],
+        "facts": [],
+        "cartell": "",
+        "docs": [],
+        "url": "",
+        "inscripcio_inici": "",
+        "inscripcio_fins": "",
+        "cartell_espai": true
+      },
+      "durant": {
+        "cr": "",
+        "live": null
+      },
+      "despres": {
+        "premis_text": "",
+        "classif_cols": [],
+        "classif_text": "",
+        "cronica": "",
+        "after": {
+          "text": "",
+          "docs": [],
+          "dates": [
+            "2026-12-21",
+            "2026-12-22",
+            "2026-12-28",
+            "2026-12-29"
+          ],
+          "end": "2026-12-29",
+          "kind": "dates",
+          "start": "2026-12-21",
+          "weeks": null
+        },
+        "fotos": [],
+        "validat": {
+          "premis": false,
+          "cronica": false
+        }
+      },
+      "avancat": {
+        "sch": null,
+        "ev": "nadal-2026",
+        "circuit": false
+      }
+    }
+  ]
+}

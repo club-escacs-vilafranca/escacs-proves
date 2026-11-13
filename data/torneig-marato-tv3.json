@@ -1,0 +1,78 @@
+{
+ "id": "marato-tv3",
+ "name": "Torneig solidari de la Marató",
+ "resum": "Torneig d'escacs solidari a favor de La Marató de TV3, a Sant Miquel d'Olèrdola.",
+ "place": "Local Rossend Montané (Sant Miquel d'Olèrdola)",
+ "format": "Suís · 6 rondes · 15 min per jugador",
+ "editions": [
+  {
+   "year": "2026",
+   "status": "proper",
+   "datesText": "Diumenge 3 de gener de 2027, a les 9:30",
+   "num": "",
+   "jornades": [],
+   "abans": {
+    "text": [
+     "Torneig d'escacs solidari a Sant Miquel d'Olèrdola, obert a tothom qui vulgui col·laborar: la recaptació es destina a La Marató de TV3."
+    ],
+    "facts": [
+     {
+      "etiqueta": "Data i hora",
+      "valor": "Diumenge 3 de gener de 2027, a les 9:30"
+     },
+     {
+      "etiqueta": "Lloc",
+      "valor": "Local Rossend Montané, Sant Miquel d'Olèrdola"
+     },
+     {
+      "etiqueta": "Participació",
+      "valor": "Obert a tothom, federats i no federats. Premis per a federats i no federats."
+     },
+     {
+      "etiqueta": "Grups",
+      "valor": "Grup A: adults, federats i no federats · Grup B: sub-12, federats i no federats"
+     },
+     {
+      "etiqueta": "Ritme i rondes",
+      "valor": "6 rondes · 15 min per jugador/a"
+     },
+     {
+      "etiqueta": "Donació",
+      "valor": "5 €. La recaptació es destina a La Marató de TV3."
+     }
+    ],
+    "cartell": "",
+    "docs": [],
+    "url": "",
+    "inscripcio_inici": "",
+    "inscripcio_fins": "",
+    "cartell_espai": true
+   },
+   "durant": {
+    "cr": "",
+    "live": null
+   },
+   "despres": {
+    "premis_text": "",
+    "classif_cols": [],
+    "classif_text": "",
+    "cronica": "",
+    "after": {
+     "text": "Resultats no publicats.",
+     "docs": [],
+     "podium": []
+    },
+    "fotos": [],
+    "validat": {
+     "premis": false,
+     "cronica": false
+    }
+   },
+   "avancat": {
+    "sch": null,
+    "ev": "marato-tv3-2026",
+    "circuit": false
+   }
+  }
+ ]
+}

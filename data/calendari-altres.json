@@ -1,0 +1,635 @@
+{
+ "events": [
+  {
+   "id": "cc5513",
+   "name": "VIII Open Internacional d'Escacs Actius Fundació Joviat",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a+ · premis 2500 euros",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-01",
+    "end": "2026-05-01",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.escacscatalonia.cat/open-2026/"
+  },
+  {
+   "id": "cc5515",
+   "name": "XII Open Internacional Ciutat de Rubí",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a · premis 2610 euros",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-10",
+    "end": "2026-05-10",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "/www.openinternacionalciutatderubi.com"
+  },
+  {
+   "id": "cc5517",
+   "name": "XXIV Obert Vila de Santpedor",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-16",
+    "end": "2026-05-16",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.clubescacssantpedor.cat"
+  },
+  {
+   "id": "cc5452",
+   "name": "V Obert Internacional d'Escacs Actius 'Cal Batista'",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b · premis 1500 EUROS",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-17",
+    "end": "2026-05-17",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs-lillet.webnode.es/copia-de-actiu-cal-batista-20252/"
+  },
+  {
+   "id": "cc5518",
+   "name": "XI Torneig d'Escacs Actius EEM",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b · premis 1410",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-24",
+    "end": "2026-05-24",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://eem.clubescacs.cat/actius2026"
+  },
+  {
+   "id": "cc5519",
+   "name": "XXII Obert d'Escacs Actius Vila Sta. Coloma de Queralt",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a+",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-05-31",
+    "end": "2026-05-31",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.usuaris.tinet.cat/sbarrot/"
+  },
+  {
+   "id": "cc5520",
+   "name": "XVIII Open Internacional Memorial Ezequiel Martín",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a · premis 1520 EUROS",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-06-07",
+    "end": "2026-06-07",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacsmollet.com"
+  },
+  {
+   "id": "cc5514",
+   "name": "XX Open Vila de Canovelles",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-06-14",
+    "end": "2026-06-14",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://escolaescacsosona.blogspot.com/"
+  },
+  {
+   "id": "cc5521",
+   "name": "III Obert Internacional d'Escacs Actius del Poble Sec",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b · premis 2320 EUROS",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-06-20",
+    "end": "2026-06-20",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://comtalescacs.cat"
+  },
+  {
+   "id": "cc5522",
+   "name": "XVI Memorial Josep Lorente",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-06-21",
+    "end": "2026-06-21",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.cesantboi.cat/"
+  },
+  {
+   "id": "cc5523",
+   "name": "VI Llinars International Chess Open",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A · premis 8500 euros",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-06-25",
+    "end": "2026-07-03",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https:// www.llinarsopen.cat"
+  },
+  {
+   "id": "cc5524",
+   "name": "VI Obert Internacional 'Ciutat de Mollerussa'",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a+",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-06-28",
+    "end": "2026-06-28",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://escacsmollerussa.cat/"
+  },
+  {
+   "id": "cc5525",
+   "name": "XLVIII Open Internacional de Barberà 2026 Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-04",
+    "end": "2026-07-12",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacsbarbera.com"
+  },
+  {
+   "id": "cc5526",
+   "name": "XXVI Open Internacional de Torredembarra",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria B",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-04",
+    "end": "2026-07-11",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacstorre.com"
+  },
+  {
+   "id": "cc5527",
+   "name": "VI Open Int. Vila del Vendrell - Memorial Josep MªPellicer",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a · premis 1710 euros",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-07-12",
+    "end": "2026-07-12",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.escacs-lira-vendrellenca.webnode.es/"
+  },
+  {
+   "id": "cc5528",
+   "name": "XXVI Obert Internacional de Sant Martí - Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A+ · premis 9030 EUROS",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-13",
+    "end": "2026-07-21",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.cesantmarti.com/Internacional/"
+  },
+  {
+   "id": "cc5529",
+   "name": "L Open Internacional Vila de Sitges - Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A+ · premis 9000 EUROS",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-22",
+    "end": "2026-07-30",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.chesspradositges.com"
+  },
+  {
+   "id": "cc5530",
+   "name": "XXV Obert Internacional Ciutat d'Olot",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-07-26",
+    "end": "2026-07-26",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacsolot.cat"
+  },
+  {
+   "id": "cc5508",
+   "name": "L Obert Internacional d'Escacs Ciutat de Badalona - Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria B · premis 6000 EUROS",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-02",
+    "end": "2026-08-10",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://escacscormarina.com/es/inicio/"
+  },
+  {
+   "id": "cc5449",
+   "name": "XXXV Festival d'Escacs La Pobla de Lillet - Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A · premis 7000 EUROS",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-05",
+    "end": "2026-08-13",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://escacs-lillet.webnode.es/obert-internacional2/"
+  },
+  {
+   "id": "cc5531",
+   "name": "VIII Open Internacional de Sant Adrià de Besòs - Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria C",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-12",
+    "end": "2026-08-20",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacssantadria.net/"
+  },
+  {
+   "id": "cc5532",
+   "name": "XXVII Obert Internacional de Figueres 'Miquel Mas'",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-08-16",
+    "end": "2026-08-16",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.escacsfigueres.cat/ca/open"
+  },
+  {
+   "id": "cc5533",
+   "name": "XXVII Open Internacional de Sants 2026 - Ciutat de Barcelona Grup A",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria A+ · premis 20000 EUROS",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-21",
+    "end": "2026-08-30",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://www.cotxeres-casinet.cat/escacs/"
+  },
+  {
+   "id": "cc5534",
+   "name": "IX Open de Puigpelat",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-09-06",
+    "end": "2026-09-06",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.escacsvalls.com"
+  },
+  {
+   "id": "cc5535",
+   "name": "Diada de l'11 de Setembre d'Escacs Actius",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria b",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-09-11",
+    "end": "2026-09-11",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "https://coralcolon.net/2026/08/25/xxii-diada-descacs-actius-ciutat-de-sabadell/"
+  },
+  {
+   "id": "cc5537",
+   "name": "XXXII Open Internacional d'Actius de Vallfogona",
+   "type": "oficial",
+   "scope": "CAT",
+   "place": "",
+   "format": "Circuit Català d'Oberts · categoria a+ · premis 4000?",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-09-13",
+    "end": "2026-09-13",
+    "weeks": null
+   },
+   "source": "fce",
+   "status": "ok",
+   "url": "http://www.vallfogona.com"
+  },
+  {
+   "id": "ext-martorell-2026",
+   "name": "XLII Open Internacional Martorell 2026",
+   "type": "altres",
+   "scope": "CAT",
+   "place": "Ca n'Oliveras, Sala d'exposicions, Nau 1, Av. Joaquim de Barnola i Bassols, 24, Martorell",
+   "format": "9 rondes suís · 90' + 30\" per jugada · vàlid per a Elo FCE i FIDE",
+   "sch": {
+    "kind": "dates",
+    "start": "2026-09-19",
+    "end": "2026-11-28",
+    "dates": [
+     "2026-09-19",
+     "2026-09-26",
+     "2026-10-17",
+     "2026-10-24",
+     "2026-10-31",
+     "2026-11-07",
+     "2026-11-14",
+     "2026-11-21",
+     "2026-11-28"
+    ],
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://clubescacsmartorell.com",
+   "bases": "assets/uploads/bases-open-martorell-2026.pdf",
+   "detalls": [
+    {
+     "etiqueta": "Rondes",
+     "valor": "Dissabtes a les 16:30: 19 i 26 de setembre; 17, 24 i 31 d'octubre; 7, 14, 21 i 28 de novembre (la ronda del 3 d'octubre es va anul·lar i es recupera el 28 de novembre)"
+    },
+    {
+     "etiqueta": "Grups",
+     "valor": "A: Elo FCE 2000 o més · B: 1850-1999 · C: fins a 1849 (mínim 25 jugadors per grup)"
+    },
+    {
+     "etiqueta": "Inscripció",
+     "valor": "Formulari a clubescacsmartorell.com, escacsmartorell@gmail.com o telèfon (615 448 586, 610 719 012, 676 847 279). Tancament: 18 de setembre a les 22 h"
+    },
+    {
+     "etiqueta": "Preus",
+     "valor": "Grup A 43 € · B 38 € · C 33 € (Sub16 i veterans-65, 5 € menys; socis del CE Martorell 23 €; 3 € de descompte pagant abans del 16/9)"
+    },
+    {
+     "etiqueta": "Premis",
+     "valor": "Grup A: 350/300/250 € i trofeu als 3 primers · Grup B: 250/200/150 € · Grup C: 200/175/150 €, més premis per trams d'Elo, locals, S60 i sub-8/10/12/14 al grup C"
+    },
+    {
+     "etiqueta": "Desempats",
+     "valor": "Buchholz -1, Buchholz total, Sonneborn-Berger, progressiu i sorteig"
+    },
+    {
+     "etiqueta": "Lliurament de premis",
+     "valor": "Diumenge 29 de novembre al matí"
+    },
+    {
+     "etiqueta": "Direcció",
+     "valor": "Director: Cristóbal Montero Montero · Àrbitre principal: Guillem Cintas Zuazua"
+    }
+   ]
+  },
+  {
+   "id": "ext-montbui-2026",
+   "name": "XXVIII Obert d'Escacs de Santa Margarida de Montbui - Memorial Joan Llorens",
+   "type": "altres",
+   "scope": "CAT",
+   "place": "Ateneu Cultural i Recreatiu, c/ Anselm Clavé, 3, Santa Margarida de Montbui",
+   "format": "8 rondes suís · 90' + 30\" per jugada · vàlid per a Elo FCE i FIDE",
+   "sch": {
+    "kind": "dates",
+    "start": "2026-09-25",
+    "end": "2026-11-20",
+    "dates": [
+     "2026-09-25",
+     "2026-10-02",
+     "2026-10-16",
+     "2026-10-23",
+     "2026-10-30",
+     "2026-11-06",
+     "2026-11-13",
+     "2026-11-20"
+    ],
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://www.escacsmontbui.cat",
+   "bases": "assets/uploads/bases-obert-montbui-2026.pdf",
+   "detalls": [
+    {
+     "etiqueta": "Rondes",
+     "valor": "Divendres a les 21 h: 25 de setembre; 2, 16, 23 i 30 d'octubre; 6, 13 i 20 de novembre"
+    },
+    {
+     "etiqueta": "Inscripció",
+     "valor": "Web escacsmontbui.cat, escacsmontbui@gmail.com o telèfon 677 150 450 (Jordi Montiel). Límit: 24 de setembre"
+    },
+    {
+     "etiqueta": "Preus",
+     "valor": "25 € · menors de 16 anys 20 € · socis del CE Montbui 22 €"
+    },
+    {
+     "etiqueta": "Premis",
+     "valor": "200/150/100 € i trofeu als 3 primers, dos premis per trams d'Elo (50 € i 25 €), trofeus sub-16, +65 i local. No acumulables"
+    },
+    {
+     "etiqueta": "Desempats",
+     "valor": "Buchholz -1, Buchholz mitjà i total, progressiu i sorteig"
+    },
+    {
+     "etiqueta": "Lliurament de premis",
+     "valor": "Divendres 27 de novembre, després d'una sessió de partides ràpides"
+    },
+    {
+     "etiqueta": "Àrbitre",
+     "valor": "Gabino Expósito Ávila"
+    }
+   ]
+  },
+  {
+   "id": "sitges-festival-open-2026-a",
+   "name": "Sunway Sitges Chess Festival · Torneig Open (rondes 1–5)",
+   "type": "altres",
+   "scope": "CAT",
+   "place": "Hotel Playa Golf, Sitges",
+   "format": "Sistema suís a 10 rondes · 90' per als primers 40 moviments + 30' per la resta, amb increment de 30\" per jugada des del primer moviment · Grup A (obert a tots els jugadors amb llicència FIDE; normes internacionals) i Grup B (Elo FIDE inferior a 2000 i sense haver superat 2100 els últims 3 anys; optatiu) · Vàlid per a l'Elo FCE, FEDA i FIDE · Una ronda al dia a les 16:30 h (1a dissabte 12; 10a dimarts 22 a les 9:30 h); dijous 17, jornada de descans, sense ronda · Premis: 30.050 € en total (Grup A 23.750 €: 1r 5.000 € + trofeu, 2n 3.000 €, 3r 1.500 €, fins al 15è; Grup B 6.300 €: 1r 1.000 € + trofeu, 2n 750 €, 3r 500 €, fins al 15è), premis per trams d'Elo FIDE (no acumulables amb els de la general), millor veterà, femenins (Grup A: 1.500 / 1.000 / 500 €; Grup B: 500 / 300 / 100 €) i trofeus infantils per categories (Sub-16/14, Sub-12 i Sub-10/8) a cada grup · Durant el festival també hi ha ràpides (15+10), blitz, bullet i Chess960 (veure l'agenda)",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-12",
+    "end": "2026-12-16",
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://www.sunwaychessfestival.com/ca/sitges/agenda"
+  },
+  {
+   "id": "sitges-festival-open-2026-b",
+   "name": "Sunway Sitges Chess Festival · Torneig Open (rondes 6–10)",
+   "type": "altres",
+   "scope": "CAT",
+   "place": "Hotel Playa Golf, Sitges",
+   "format": "Sistema suís a 10 rondes · 90' per als primers 40 moviments + 30' per la resta, amb increment de 30\" per jugada des del primer moviment · Grup A (obert a tots els jugadors amb llicència FIDE; normes internacionals) i Grup B (Elo FIDE inferior a 2000 i sense haver superat 2100 els últims 3 anys; optatiu) · Vàlid per a l'Elo FCE, FEDA i FIDE · Una ronda al dia a les 16:30 h (1a dissabte 12; 10a dimarts 22 a les 9:30 h); dijous 17, jornada de descans, sense ronda · Premis: 30.050 € en total (Grup A 23.750 €: 1r 5.000 € + trofeu, 2n 3.000 €, 3r 1.500 €, fins al 15è; Grup B 6.300 €: 1r 1.000 € + trofeu, 2n 750 €, 3r 500 €, fins al 15è), premis per trams d'Elo FIDE (no acumulables amb els de la general), millor veterà, femenins (Grup A: 1.500 / 1.000 / 500 €; Grup B: 500 / 300 / 100 €) i trofeus infantils per categories (Sub-16/14, Sub-12 i Sub-10/8) a cada grup · Durant el festival també hi ha ràpides (15+10), blitz, bullet i Chess960 (veure l'agenda)",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-18",
+    "end": "2026-12-22",
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://www.sunwaychessfestival.com/ca/sitges/agenda"
+  },
+  {
+   "id": "sitges-festival-blitz-2026",
+   "name": "Sunway Sitges Chess Festival · Torneig Blitz",
+   "type": "altres",
+   "scope": "CAT",
+   "place": "Hotel Playa Golf, Sitges",
+   "format": "Dijous 17 de desembre, a les 17:30 h · Inscripció oberta fins a les 00:00 h del 13/12",
+   "sch": {
+    "kind": "dia",
+    "start": "2026-12-17",
+    "end": "",
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://www.sunwaychessfestival.com/ca/sitges/agenda"
+  },
+  {
+   "id": "bali-copa-equips-edats-2026",
+   "name": "XVII Copa de Equipos por Edades · Gran Hotel Bali (Sub-12, Sub-14, Sub-16 i Sub-18)",
+   "type": "altres",
+   "scope": "ESP",
+   "place": "Gran Hotel Bali, Benidorm",
+   "format": "Torneig per equips de 4 taulers (Elo FIDE inferior a 2400) · Sistema suís a 6 rondes, 60 min + 30 s per jugada des del primer moviment · Es juga per separat a Sub-12 (nascuts el 2014 o després), Sub-14 (2012), Sub-16 (2010) i Sub-18 (2008) · Vàlid per a l'Elo FIDE · Acreditacions i reunió de delegats el 5/12 (12:00 i 12:30) · Rondes: 5/12 17:00, 6/12 10:00 i 17:00, 7/12 10:00 i 17:00, 8/12 9:30 · Inscripció per formulari fins l'1 de desembre a les 14:00 (aforament 140 equips): 90 € per equip (75 € si s'allotgen al Gran Hotel Bali), 10 € per suplent extra · Premis per categoria: 1r trofeu + 400 €, 2n trofeu + 300 €, 3r trofeu + 200 €; medalla a tots els participants Sub-12 i Sub-14",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-05",
+    "end": "2026-12-08",
+    "weeks": null
+   },
+   "source": "manual",
+   "status": "ok",
+   "url": "https://ajedrezenelbali.com/copa-equipos-edades/"
+  }
+ ]
+}

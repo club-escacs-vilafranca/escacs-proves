@@ -1,7 +1,8 @@
 # escacs-proves
 
-Repositori **públic** del Club d'Escacs Vilafranca per provar automatitzacions (Chess-Results, FFE, Info64, FIDE, Vesus…) amb minuts d'Actions gratuïts.
+Banc de proves **públic** del Club d'Escacs Vilafranca. Té els mateixos workflows i el mateix codi que el repositori de la web (`PROVA · …`), però:
 
-- Només conté codi i **dades públiques**. No hi ha dades de socis ni de menors (l'única excepció és la jugadora que la seva família ha autoritzat a provar-hi).
-- Cap workflow s'executa sol: es llancen a mà des de la pestanya **Actions → Run workflow**.
-- Cada execució escriu un **resum** (Summary) amb l'estat de cada font i desa les pàgines en brut a `mostres/`.
+- Només s'executen a mà (Actions → Run workflow); no tenen horari.
+- Només treballen amb dues jugadores autoritzades (`data/jugadors.json`).
+- Els resultats **no es desen al repositori**: es xifren amb la clau pública `proves-public.asc` i es pugen com a artefacte; només el club els pot llegir i copiar al repositori privat.
+- Si el script falla, l'acció surt en vermell (`pipefail`).

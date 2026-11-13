@@ -1,0 +1,463 @@
+{
+  "id": "minicircuit-penedes",
+  "name": "Minicircuit del Penedès",
+  "resum": "Circuit de sis jornades de ràpides al llarg de la tardor.",
+  "place": "Diversos llocs del Penedès; final a Vilafranca del Penedès",
+  "format": "Ràpides, 5 rondes per jornada, 15 min + 3 s",
+  "editions": [
+    {
+      "year": "2026",
+      "status": "",
+      "datesText": "",
+      "num": "IV",
+      "jornades": [
+        {
+          "d": "2026-09-27",
+          "lloc": "Gelida · Sala de joc, c/ Major, 16",
+          "hora": "9:30",
+          "estat": "",
+          "nota": "",
+          "info": "5 rondes · 15 min + 3 s · no vàlid per a Elo. General i sèniors 5 €, menors de 12 anys 2 €, socis del Club d'Escacs Gelida gratuït. Classificacions i premis per a federats, no federats, federats sub-12 i no federats sub-12. Inscripcions per WhatsApp (número al cartell).",
+          "cronica": "La primera jornada del IV Minicircuit del Penedès es va jugar el diumenge 27 de setembre de 2026 a Gelida, a la sala de joc del carrer Major, a partir de les 9:30. Es van disputar 5 rondes a 15 minuts més 3 segons per jugada, en dos grups: el general, amb 45 jugadors, i el sub-12, amb 30. Entre tots dos grups, el Club d'Escacs Vilafranca va aportar 23 jugadors.\n\nAl grup general, Joan Vilella (Igualada-Ateneu) va ser el primer federat amb 4½ punts, igual que Lluís Canellas (Tres Peons), que va quedar segon pel desempat; Manuel Carrasco (Montornès) va ser tercer amb 4 punts. Entre els no federats, el primer va ser Albert Prat, seguit de Joan Ferret i Francisco Molero. Al grup sub-12, Martin Acedo va fer pleno (5 sobre 5), amb Oliver Bencosme i Mark Boevskiy al podi; entre els no federats sub-12 va guanyar Mikel Molero, per davant de Raül López i Èric Aullón.\n\nDel Club d'Escacs Vilafranca, els millors del grup general van ser Pere Pons i Gabriel Ojeda, amb 3½ punts (8è i 9è). Al grup sub-12, Joan Ferran va ser cinquè amb 3½ punts i va puntuar al circuit, i Greta García va ser sisena amb els mateixos punts. Gabriel Ojeda, Hiroshi Pérez-Aranda i Eduardo García van ser els que més van rendir per sobre del seu Elo, és a dir, els que més punts van sumar respecte als que s'esperaven d'ells. Entre tots, els jugadors del club van sumar 59 punts.",
+          "cronica_validada": true,
+          "cartell": "assets/uploads/cartell-minicircuit-gelida-2026.jpg",
+          "bases": "assets/uploads/bases-minicircuit-gelida-2026.pdf",
+          "inscripcio": "",
+          "inscripcio_inici": "",
+          "inscripcio_fins": "",
+          "puntuacio": [
+            {
+              "cat": "Adults federats",
+              "lloc": 1,
+              "nom": "Joan Vilella"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 2,
+              "nom": "Lluís Canellas"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 3,
+              "nom": "Manuel Carrasco"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 4,
+              "nom": "Miguel Angel Molina"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 5,
+              "nom": "Magí Belvis"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 1,
+              "nom": "Albert Prat"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 2,
+              "nom": "Joan Ferret"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 3,
+              "nom": "Francisco Molero"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 4,
+              "nom": "Joaquim Mensa"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 5,
+              "nom": "Manel Perez"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 1,
+              "nom": "Martin Acedo"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 2,
+              "nom": "Oliver Bencosme"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 3,
+              "nom": "Mark Boevskiy"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 4,
+              "nom": "Màxim Arnabat"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 5,
+              "nom": "Joan Ferran"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 1,
+              "nom": "Mikel Molero"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 2,
+              "nom": "Raul Lopez"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 3,
+              "nom": "Èric Aullón"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 4,
+              "nom": "Artau Almenara"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 5,
+              "nom": "Nuno Silva"
+            }
+          ],
+          "crs": [
+            {
+              "nom": "Grup general",
+              "url": "https://s1.chess-results.com/tnr1492840.aspx?lan=9"
+            },
+            {
+              "nom": "Grup sub-12",
+              "url": "https://s1.chess-results.com/tnr1492846.aspx?lan=9"
+            }
+          ],
+          "fotos": [
+            {
+              "src": "assets/noticies/18110604470177099-1.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-2.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-3.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-4.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-5.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-6.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-7.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-8.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-9.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18110604470177099-10.jpg",
+              "peu": ""
+            }
+          ]
+        },
+        {
+          "d": "2026-10-04",
+          "lloc": "Vilobí del Penedès · Cooperativa de Bellver, c/ de la Cooperativa, 1",
+          "hora": "9 a 14 h",
+          "estat": "suspesa",
+          "nota": "Suspesa per temporal.",
+          "info": "6a edició de l'«Escac al Rei», organitzada per l'Ateneu de Vilobí del Penedès i la Cooperativa de Bellver, amb el suport del Club d'Escacs Vilafranca i l'Ajuntament de Vilobí. Infantils (nascuts el 2015 o després) 2 €, sèniors 4 €. Inscripcions a info@cooperativabellver.org o amb el formulari del cartell.",
+          "cronica": "",
+          "cronica_validada": false,
+          "cartell": "assets/uploads/cartell-minicircuit-vilobi-2026.jpg",
+          "bases": "",
+          "inscripcio": "mailto:info@cooperativabellver.org",
+          "inscripcio_inici": "",
+          "inscripcio_fins": "",
+          "puntuacio": [],
+          "crs": [],
+          "fotos": []
+        },
+        {
+          "d": "2026-11-08",
+          "lloc": "Ordal (Subirats) · Avinguda Barcelona, 47 (Cafè de l'Ateneu Ordalenc)",
+          "hora": "9:30",
+          "estat": "",
+          "nota": "",
+          "info": "Torneig organitzat per l'Ateneu Ordalenc amb la col·laboració del Club d'Escacs Vilafranca. 5 rondes · 15 min + 3 s · no vàlid per a Elo ni homologat per la FCE; hi poden jugar federats i no federats. General i sèniors 5 €, menors de 12 anys 2 € (s'abonen abans de la 1a ronda). Inscripció per formulari fins a l'1 de novembre a les 24 h, places limitades. Premis per a federats, no federats, federats sub-12 i no federats sub-12. Puntuable pel 4t Mini-circuit del Penedès. Director i àrbitre: Elies Ayats (dubtes i inscripció per WhatsApp: 652 47 33 10).",
+          "cronica": "La tercera jornada del IV Minicircuit del Penedès (la segona, a Vilobí, es va suspendre per temporal) es va jugar el diumenge 8 de novembre de 2026 al Cafè de l'Ateneu Ordalenc, a Ordal (Subirats). La va organitzar l'Ateneu Ordalenc amb la col·laboració del Club d'Escacs Vilafranca, amb 5 rondes a 15 minuts més 3 segons per jugada. Hi van participar uns 70 jugadors, federats i no federats.\n\nEntre els adults federats, Blai Alegre va ser el primer, Gabriel Ojeda el segon i Denis Boevskiy el tercer, i Hiroshi Pérez-Aranda va ser cinquè. Entre els no federats va guanyar Joan Ferret, que ja havia estat segon a Gelida, seguit de Jordi Margarit i Kim Mesa.\n\nAls sub-12 federats, Jan Pons i Lluc López van fer el primer i el segon lloc, amb Polina Boevskaia tercera. Entre els sub-12 no federats, Adrià Atserias va ser el primer, Mikel Molero el segon (havia guanyat a Gelida) i Biel López el tercer.",
+          "cronica_validada": true,
+          "cartell": "assets/uploads/cartell-minicircuit-ordal-2026.jpg",
+          "bases": "",
+          "inscripcio": "https://wa.me/34652473310",
+          "inscripcio_inici": "",
+          "inscripcio_fins": "",
+          "puntuacio": [
+            {
+              "cat": "Adults federats",
+              "lloc": 1,
+              "nom": "Blai Alegre"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 2,
+              "nom": "Gabriel Ojeda"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 3,
+              "nom": "Denis Boevskiy"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 4,
+              "nom": "Juli Pijuan"
+            },
+            {
+              "cat": "Adults federats",
+              "lloc": 5,
+              "nom": "Hiroshi Pérez-Aranda"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 1,
+              "nom": "Joan Ferret"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 2,
+              "nom": "Jordi Margarit"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 3,
+              "nom": "Kim Mesa"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 4,
+              "nom": "Genis Bernat"
+            },
+            {
+              "cat": "Adults no federats",
+              "lloc": 5,
+              "nom": "Esteve Anguil"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 1,
+              "nom": "Jan Pons"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 2,
+              "nom": "Lluc López"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 3,
+              "nom": "Polina Boevskaia"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 4,
+              "nom": "Arnau Masferrer"
+            },
+            {
+              "cat": "Sub-12 federats",
+              "lloc": 5,
+              "nom": "Jofre Ramon"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 1,
+              "nom": "Adrià Atserias"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 2,
+              "nom": "Mikel Molero"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 3,
+              "nom": "Biel López"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 4,
+              "nom": "Eloi Sánchez"
+            },
+            {
+              "cat": "Sub-12 no federats",
+              "lloc": 5,
+              "nom": "Ferran Rubió"
+            }
+          ],
+          "crs": [],
+          "fotos": [
+            {
+              "src": "assets/noticies/18117148463173786-1.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-2.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-3.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-4.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-5.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-6.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-7.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-8.jpg",
+              "peu": ""
+            },
+            {
+              "src": "assets/noticies/18117148463173786-9.jpg",
+              "peu": ""
+            }
+          ]
+        },
+        {
+          "d": "2026-11-15",
+          "lloc": "Santa Margarida i els Monjos · c/ d'Anselm Clavé, 12 (hi haurà servei de bar)",
+          "hora": "9:30",
+          "estat": "",
+          "nota": "",
+          "info": "Obert d'Escacs Margaridoia, organitzat per la SCE La Margaridoia amb la col·laboració del Club d'Escacs Vilafranca. 5 rondes · 15 min + 3 s · no homologat per la FCE ni vàlid per a Elo; hi poden jugar federats i no federats. General i sèniors 5 €, menors de 12 anys i socis 2 € (s'abonen abans de la 1a ronda). Places limitades. Premis (trofeus) per a federats, no federats, federats sub-12 i no federats sub-12, més el primer local adult i sub-12; tots els participants sub-12 reben premi. Desempats: Buchholz mitjà, Buchholz i Buchholz progressiu. Director: Juan Carlos De-Lamo (607 815 456). Àrbitre: Elies Ayats (dubtes: 652 47 33 10). Inscripció pel formulari o per WhatsApp al 640 119 745.",
+          "cronica": "",
+          "cronica_validada": false,
+          "cartell": "",
+          "bases": "assets/uploads/bases-margaridoia-2026.pdf",
+          "inscripcio": "https://docs.google.com/forms/d/e/1FAIpQLSdcx9gyaMiRdRG7OG4pumeDHyAiuL8txdYaGf6aKydsHbCCHg/viewform?usp=sf_link",
+          "inscripcio_inici": "2026-11-10",
+          "inscripcio_fins": "2026-11-14",
+          "puntuacio": [],
+          "crs": [],
+          "fotos": []
+        },
+        {
+          "d": "2026-11-22",
+          "lloc": "Sant Pau d'Ordal",
+          "hora": "",
+          "estat": "",
+          "nota": "",
+          "info": "",
+          "cronica": "",
+          "cronica_validada": false,
+          "cartell": "",
+          "bases": "",
+          "inscripcio": "",
+          "inscripcio_inici": "",
+          "inscripcio_fins": "",
+          "puntuacio": [],
+          "crs": [],
+          "fotos": []
+        },
+        {
+          "d": "2026-12-13",
+          "lloc": "Vilafranca del Penedès",
+          "hora": "",
+          "estat": "",
+          "nota": "Final, matí i tarda. Estava prevista el 29 de novembre i s'ha mogut per les eleccions espanyoles.",
+          "info": "",
+          "cronica": "",
+          "cronica_validada": false,
+          "cartell": "",
+          "bases": "",
+          "inscripcio": "",
+          "inscripcio_inici": "",
+          "inscripcio_fins": "",
+          "puntuacio": [],
+          "crs": [],
+          "fotos": []
+        }
+      ],
+      "abans": {
+        "text": [
+          "El Minicircuit del Penedès és un circuit de sis jornades d'escacs ràpids que es juguen a diferents poblacions del Penedès, organitzades pels clubs i les entitats de cada lloc. La darrera, la final, es juga a Vilafranca del Penedès.",
+          "Cada jornada té el seu ritme, horari, preus i inscripció: consulta'ls a la llista de jornades. En general, es juguen 5 rondes a 15 minuts més 3 segons per jugada, hi ha categoria de federats i de no federats, i no és vàlid per a Elo."
+        ],
+        "facts": [
+          {
+            "etiqueta": "Puntuació del circuit",
+            "valor": "A cada jornada puntuen els 5 primers de cada categoria (federats, no federats, sub-12 federats i sub-12 no federats): 1r 10 punts, 2n 8, 3r 5, 4t 3 i 5è 1. En cas d'empat a punts, es valora primer el nombre de jornades jugades i després les 3 millors classificacions."
+          }
+        ],
+        "cartell": "",
+        "docs": [
+          {
+            "n": "Cartell IV Minicircuit 2026",
+            "url": "assets/uploads/cartell-minicircuit-2026.pdf"
+          },
+          {
+            "n": "Bases de la puntuació del circuit 2026",
+            "url": "assets/uploads/bases-minicircuit-2026.pdf"
+          }
+        ],
+        "url": "",
+        "inscripcio_inici": "",
+        "inscripcio_fins": ""
+      },
+      "durant": {
+        "cr": "",
+        "live": {
+          "text": "Aquí hi ha les jornades de l'edició, cadascuna amb la seva informació i enllaços."
+        }
+      },
+      "despres": {
+        "premis_text": "",
+        "classif_cols": [],
+        "classif_text": "",
+        "cronica": "",
+        "after": null,
+        "fotos": [],
+        "validat": {
+          "premis": false,
+          "cronica": false
+        }
+      },
+      "avancat": {
+        "sch": null,
+        "ev": "",
+        "circuit": true
+      }
+    }
+  ]
+}

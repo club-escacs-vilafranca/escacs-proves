@@ -1,0 +1,38 @@
+{
+ "titol": "XVIII Obert d'Escacs Vilafranca 2027",
+ "any": 2027,
+ "prova": true,
+ "enviament_url": "https://script.google.com/macros/s/AKfycbx4K2RADv0sSywrBEMHWLP9inhpAZhNPit8yAvnwdYmFrS7wMRvqdXwJ2ff04uWqej9/exec",
+ "tornejos": {
+  "obert": {
+   "nom": "Obert",
+   "ritme": "std",
+   "requereix_fide": true,
+   "preu_general": 30,
+   "preu_menor": 25,
+   "preu_major": 25,
+   "preu_club": 20,
+   "elo_gratis": 2300,
+   "menor_fins_sub": 18,
+   "major_des_de": 65,
+   "club_nom": "Vilafranca",
+   "data_inici": "2027-04-02"
+  },
+  "rapides": {
+   "nom": "Ràpides de l'Obert",
+   "ritme": "rapid",
+   "requereix_fide": true,
+   "preu_general": 5,
+   "preu_menor": 5,
+   "preu_major": 5,
+   "preu_club": 5,
+   "elo_gratis": 0,
+   "menor_fins_sub": 18,
+   "major_des_de": 65,
+   "club_nom": "Vilafranca",
+   "data_inici": "2027-06-18"
+  }
+ },
+ "pagament_text": "El pagament es fa en metàl·lic el primer dia del torneig, abans de la 1a ronda.",
+ "recordatori_dies": 2
+}

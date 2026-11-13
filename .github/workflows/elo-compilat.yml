@@ -1,0 +1,35 @@
+name: PROVA · Compilar la validesa per a l'Elo
+# Quan canvies un torneig a «Validesa per a l'Elo» del backoffice, es refà data/elo-compilat.json (el que llegeix la web).
+on:
+  push:
+    branches: [main]
+    paths: ["data/elo/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compila:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -c "import sys; sys.path.insert(0, 'tools'); import avis_elo; avis_elo.compila()"
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-xifrats-${{ github.workflow }}
+          path: resultats.tgz.gpg
+          if-no-files-found: ignore
+          retention-days: 14

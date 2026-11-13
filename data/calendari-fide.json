@@ -1,0 +1,990 @@
+{
+ "events": [
+  {
+   "id": "fide-european-women-s-rapid-chess-championship-2025-2026",
+   "name": "European Women's Rapid Chess Championship 2025",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monaco, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-01-08",
+    "end": "2026-01-12",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-women-s-blitz-chess-championship-2025-2026",
+   "name": "European Women's Blitz Chess Championship 2025",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monaco, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-01-08",
+    "end": "2026-01-12",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-individual-chess-championship-2026-2026",
+   "name": "European Individual Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Katowice, POL",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-06",
+    "end": "2026-04-20",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-cadet-youth-rapid-championships-2026-2026",
+   "name": "FIDE World Cadet & Youth Rapid Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Banja, SRB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-14",
+    "end": "2026-04-21",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-cadet-youth-blitz-championships-2026-2026",
+   "name": "FIDE World Cadet & Youth Blitz Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Banja, SRB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-14",
+    "end": "2026-04-21",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-senior-teams-championships-2026-2026",
+   "name": "FIDE World Senior Teams Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Durres, ALB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-18",
+    "end": "2026-04-29",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-school-chess-championship-2026-2026",
+   "name": "European School Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Trogir, CRO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-04-26",
+    "end": "2026-05-05",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-women-s-chess-championship-2026-2026",
+   "name": "European Women's Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Batumi, GEO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-05-24",
+    "end": "2026-06-06",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-senior-individual-chess-championship-2026-2026",
+   "name": "European Senior Individual Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Aqui Terme, ITA",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-06-01",
+    "end": "2026-06-11",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-youth-u14-u16-u18-championships-2026-2026",
+   "name": "FIDE World Youth U14, U16 & U18 Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Montesilvano, ITA",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-06-14",
+    "end": "2026-06-27",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-cup-u8-u10-u12-2026",
+   "name": "FIDE World Cup U8, U10, U12",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Batumi, GEO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-06-15",
+    "end": "2026-06-28",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-youth-rapid-chess-championship-2026-2026",
+   "name": "European Youth Rapid Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Rzeszow, POL",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-06",
+    "end": "2026-07-10",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-youth-blitz-chess-championship-2026-2026",
+   "name": "European Youth Blitz Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Rzeszow, POL",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-06",
+    "end": "2026-07-10",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-youth-team-chess-championship-2026-2026",
+   "name": "European Youth Team Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Pardubice, CZE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-07-25",
+    "end": "2026-08-02",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-junior-u20-chess-championship-2026-2026",
+   "name": "European Junior U20 Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Centinje, MNE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-08-05",
+    "end": "2026-08-16",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-46th-chess-olympiad-2026-2026",
+   "name": "46th Chess Olympiad 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Samarkand, UZB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-09-15",
+    "end": "2026-09-28",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-u7-u17-championships-2026-2026",
+   "name": "FIDE World U7-U17 Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Roquetas de Mar, ESP",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-10-13",
+    "end": "2026-10-21",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-chess-club-cup-open-women-2026-2026",
+   "name": "European Chess Club Cup Open & Women 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Herceg Novi, MNE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-10-16",
+    "end": "2026-10-24",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-junior-u20-rapid-chess-championship-2026-2026",
+   "name": "FIDE World Junior U20 Rapid Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Al Ain, UAE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-junior-u20-blitz-chess-championship-2026-2026",
+   "name": "FIDE World Junior U20 Blitz Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Al Ain, UAE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-senior-chess-championships-2026-2026",
+   "name": "FIDE World Senior Chess Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Banja, SRB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-02",
+    "end": "2026-11-15",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-youth-chess-championship-2026-2026",
+   "name": "European Youth Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Hersonissos, Crete, GRE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-02",
+    "end": "2026-11-13",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-junior-u20-championships-2026-2026",
+   "name": "FIDE World Junior U20 Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Caracas, VEN",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-17",
+    "end": "2026-11-28",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-cadet-u8-u10-u12-chess-championship-2026-2026",
+   "name": "FIDE World Cadet U8, U10, U12 Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Batumi, GEO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-11-21",
+    "end": "2026-11-29",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-rapid-chess-championship-2026-2026",
+   "name": "European Rapid Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Portimao, POR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-04",
+    "end": "2026-12-09",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-blitz-chess-championship-2026-2026",
+   "name": "European Blitz Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Portimao, POR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-04",
+    "end": "2026-12-09",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-u7-u17-rapid-chess-championships-2026-2026",
+   "name": "FIDE World U7-U17 Rapid Chess Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Cairo, EGY",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-08",
+    "end": "2026-12-15",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-u7-u17-blitz-chess-championships-2026-2026",
+   "name": "FIDE World U7-U17 Blitz Chess Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Cairo, EGY",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-08",
+    "end": "2026-12-15",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-rapid-championships-2026-2026",
+   "name": "FIDE World Rapid Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Istanbul, TUR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-25",
+    "end": "2026-12-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-blitz-championships-2026-2026",
+   "name": "FIDE World Blitz Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Istanbul, TUR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-25",
+    "end": "2026-12-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-womens-rapid-championships-2026-2026",
+   "name": "FIDE World Women’s Rapid Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Istanbul, TUR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-25",
+    "end": "2026-12-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-fide-world-womens-blitz-championships-2026-2026",
+   "name": "FIDE World Women’s Blitz Championships 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Istanbul, TUR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2026-12-25",
+    "end": "2026-12-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2026"
+  },
+  {
+   "id": "fide-european-women-s-rapid-chess-championship-2026-2027",
+   "name": "European Women's Rapid Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monte-Carlo, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-01-07",
+    "end": "2027-01-11",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-women-s-blitz-chess-championship-2026-2027",
+   "name": "European Women's Blitz Chess Championship 2026",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monte-Carlo, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-01-07",
+    "end": "2027-01-11",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-senior-rapid-chess-championship-2027-2027",
+   "name": "European Senior Rapid Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monte-Carlo, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-01-10",
+    "end": "2027-01-14",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-senior-blitz-chess-championship-2027-2027",
+   "name": "European Senior Blitz Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Monte-Carlo, MNC",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-01-10",
+    "end": "2027-01-14",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-women-s-chess-championship-2027-2027",
+   "name": "European Women's Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Mellieha, MLT",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-03-15",
+    "end": "2027-03-28",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-school-chess-championship-2027-2027",
+   "name": "European School Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Antalya, TUR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-03-21",
+    "end": "2027-03-31",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-senior-team-chess-championships-2027-2027",
+   "name": "FIDE World Senior Team Chess Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Magdeburg, GER",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-03-31",
+    "end": "2027-04-11",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-cadet-rapid-championships-u8-u18-2027-2027",
+   "name": "FIDE World Cadet Rapid Championships U8-U18 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Roquetas de Mar, ESP",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-04-01",
+    "end": "2027-04-07",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-cadet-blitz-championships-u8-u18-2027-2027",
+   "name": "FIDE World Cadet Blitz Championships U8-U18 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Roquetas de Mar, ESP",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-04-01",
+    "end": "2027-04-07",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-senior-team-chess-championship-2027-2027",
+   "name": "European Senior Team Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Aqui Terme, ITA",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-04-23",
+    "end": "2027-05-03",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-team-u8-u12-championships-2027-2027",
+   "name": "FIDE World Team U8-U12 Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Batumi, GEO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-06-01",
+    "end": "2027-06-08",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-individual-chess-championship-2027-2027",
+   "name": "European Individual Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Batumi, GEO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-06-10",
+    "end": "2027-06-23",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-youth-u14-u16-u18-championships-2027-2027",
+   "name": "FIDE World Youth U14, U16, U18 Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Montesilvano, ITA",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-06-14",
+    "end": "2027-06-27",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-youth-team-chess-championship-2027-2027",
+   "name": "European Youth Team Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Mamaia, ROU",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-06-29",
+    "end": "2027-07-07",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-cup-u8-u10-u12-2027-2027",
+   "name": "FIDE World Cup U8, U10, U12 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Cali, Valle del Cauca, COL",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-07-07",
+    "end": "2027-07-21",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-junior-u20-chess-championship-2027-2027",
+   "name": "European Junior U20 Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Novisad, SRB",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-07-25",
+    "end": "2027-08-05",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-youth-u16-olympiad-2027-2027",
+   "name": "FIDE World Youth U16 Olympiad 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Shenzhen, CHN",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-08-01",
+    "end": "2027-08-11",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-youth-rapid-chess-championship-2027-2027",
+   "name": "European Youth Rapid Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Terme Catez, SLO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-08-25",
+    "end": "2027-08-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-youth-blitz-chess-championship-2027-2027",
+   "name": "European Youth Blitz Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Terme Catez, SLO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-08-25",
+    "end": "2027-08-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-junior-u20-championships-2027-2027",
+   "name": "FIDE World Junior U20 Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Fujairah, UAE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-09-15",
+    "end": "2027-09-30",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-senior-chess-championships-2027-2027",
+   "name": "FIDE World Senior Chess Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Orosei, Sardinia, ITA",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-10-01",
+    "end": "2027-10-14",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-team-chess-championship-2027-2027",
+   "name": "European Team Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Lagos, POR",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-11-01",
+    "end": "2027-11-12",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-european-youth-chess-championship-2027-2027",
+   "name": "European Youth Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Rhodes, GRE",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-11-01",
+    "end": "2027-11-12",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-cadet-u8-u10-u12-chess-championship-2027-2027",
+   "name": "FIDE World Cadet U8, U10, U12 Chess Championship 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Medellín, Antioquia, COL",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-11-15",
+    "end": "2027-11-22",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-rapid-u7-u17-championships-2027-2027",
+   "name": "FIDE World Rapid U7-U17 Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Brezice, SLO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-12-09",
+    "end": "2027-12-16",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  },
+  {
+   "id": "fide-fide-world-blitz-u7-u17-championships-2027-2027",
+   "name": "FIDE World Blitz U7-U17 Championships 2027",
+   "type": "oficial",
+   "scope": "INT",
+   "place": "Brezice, SLO",
+   "format": "Calendari FIDE",
+   "sch": {
+    "kind": "dies",
+    "start": "2027-12-09",
+    "end": "2027-12-16",
+    "weeks": null
+   },
+   "source": "fide",
+   "status": "ok",
+   "url": "https://calendar.fide.com/majorcalendar.php?show=showYear&page=2027"
+  }
+ ]
+}

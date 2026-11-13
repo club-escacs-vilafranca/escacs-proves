@@ -1,0 +1,34 @@
+name: PROVA · Actualitzar el calendari FIDE
+# Cada setmana (i quan tu ho demanis): llegeix el calendari internacional de la FIDE (2026-2028) amb un navegador
+# i el desa al calendari (categoria FIDE). Només hi van els esdeveniments amb dates concretes.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fide:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/fide_calendari.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultats-xifrats-${{ github.workflow }}
+          path: resultats.tgz.gpg
+          if-no-files-found: ignore
+          retention-days: 14
