@@ -31,7 +31,7 @@ jobs:
         run: |
           [ -f resultats.tgz.gpg ] || { echo "Sense canvis."; exit 0; }
           mkdir -p resultats-xifrats
-          NOM="resultats-xifrats/$(basename "${GITHUB_WORKFLOW_REF%%@*}").gpg"; cp resultats.tgz.gpg "$NOM"
+          NOM="resultats-xifrats/$(basename "${GITHUB_WORKFLOW_REF%%@*}")-${GITHUB_RUN_NUMBER}.gpg"; cp resultats.tgz.gpg "$NOM"
           git config user.name github-actions; git config user.email actions@users.noreply.github.com
           git add resultats-xifrats
           git commit -qm "Resultat xifrat de ${GITHUB_WORKFLOW}" || exit 0
