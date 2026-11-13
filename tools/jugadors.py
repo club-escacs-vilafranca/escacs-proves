@@ -792,6 +792,15 @@ def main(des="2026-09-01"):
         print("FCE: no s'ha pogut llegir la llista (es conserva l'anterior):", e)
         club = antic.get("jugadors", [])
     club = desambigua(club)
+    if os.environ.get("LOGS_ANONIMS"):        # repositori de proves públic: cap nom de jugador (ni de menors) als logs; el detall va xifrat
+        import builtins, re as _re
+        _noms = sorted({n for j in club for n in (j.get("nom"), j.get("nom_cr")) if n and len(n) > 3}, key=len, reverse=True)
+        _pat = _re.compile("|".join(_re.escape(n) for n in _noms), _re.I) if _noms else None
+        _ids = {}
+        def _masca(m):
+            return _ids.setdefault(m.group(0).lower(), f"jugador-{len(_ids) + 1}")
+        _print0 = builtins.print
+        builtins.print = lambda *a, **k: _print0(*[(_pat.sub(_masca, x) if _pat and isinstance(x, str) else x) for x in a], **k)
     # 2. codi FIDE (de la FCE; si no, per nom a Chess-Results)
     errors_fide = 0
     for j in club:

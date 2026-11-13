@@ -15,6 +15,11 @@ on:
       des:
         description: "Torneigs acabats des de (AAAA-MM-DD). Buit = des de l'1 de gener de l'any en curs. Per anar enrere posa una data anterior (p. ex. 2026-06-01); el que és anterior es conserva"
         default: ""
+      tots:
+        description: "Segona passada: tots els jugadors del club (logs sense noms, sortida xifrada). Per defecte només la Sílvia i l'Andrea"
+        type: choice
+        options: ["no", "si"]
+        default: "no"
 
 permissions:
   contents: write
@@ -27,7 +32,8 @@ jobs:
       run:
         shell: bash -eo pipefail {0}
     env:
-      NOMES_PROVA: "1"
+      NOMES_PROVA: ${{ inputs.tots == 'si' && '' || '1' }}
+      LOGS_ANONIMS: "1"
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v5
