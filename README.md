@@ -4,5 +4,5 @@ Banc de proves **públic** del Club d'Escacs Vilafranca. Té els mateixos workfl
 
 - Només s'executen a mà (Actions → Run workflow); no tenen horari.
 - Només treballen amb dues jugadores autoritzades (`data/jugadors.json`).
-- Els resultats **no es desen al repositori**: es xifren amb la clau pública `proves-public.asc` i es pugen com a artefacte; només el club els pot llegir i copiar al repositori privat.
+- Els resultats es desen **xifrats** (`resultats-xifrats/*.gpg`, clau pública `proves-public.asc`): ningú no pot llegir-los sense la clau privada del club, que els copia al repositori privat.
 - Si el script falla, l'acció surt en vermell (`pipefail`).
