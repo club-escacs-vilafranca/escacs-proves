@@ -15,27 +15,21 @@ with sync_playwright() as p:
     s0 = BeautifulSoup(pg.content(), "html.parser")
     print("ENLLAÇOS del menú:", [(a.get_text(" ", strip=True)[:30], a["href"]) for a in s0.select("a[href]") if re.search(r"search|cerca|player|jugador|buscar", (a["href"] + a.get_text()).lower())][:20])
     print("FORMULARIS:", [(f.get("action"), [i.get("name") for i in f.select("input")]) for f in s0.select("form")][:6])
-    for q in ("serradell", "serradell munoz", "serradell villa", "munoz serradell"):
-        try:
-            files = I.cerca(pg, q)
-        except Exception as e:
-            print(f"cerca '{q}': ERROR {str(e)[:100]}"); continue
-        print(f"cerca '{q}': {len(files)} files")
-        if not files:
-            from bs4 import BeautifulSoup
-            s = BeautifulSoup(pg.content(), "html.parser")
-            print("   URL final:", pg.url, "| títol:", pg.title(), "| taules:", len(s.select("table")), "| files tbody:", len(s.select("table tbody tr")))
-            print("   Text de la pàgina:", re.sub(r"\s+", " ", s.get_text(" "))[:400])
-        for f in files:
-            n = I.sa(f["nom"].replace(",", " "))
-            if "serradell" not in n or not any(x in n for x in NOMS): continue
-            k = (f["nom"], f["href_t"])
-            if k in vistos: continue
-            vistos.add(k)
-            quin = next(x for x in NOMS if x in n)
-            motius = []
-            if n != ESPERATS[quin]: motius.append(f"nom diferent de «{ESPERATS[quin]}»")
-            if re.search(r"tecnificaci", f["torneig"], re.I): motius.append("tecnificació")
-            print(f"  {f['nom']} | {f['torneig']} | {f['inici']} → {f['fi']} | {'DESCARTAT: ' + ', '.join(motius) if motius else 'passa el filtre de nom'}")
+    for u in ("/search-player", "/search-player?hl=ca", "/search-player?hl=ca&name=serradell", "/search-player?name=serradell"):
+        r = pg.goto("https://info64.org" + u, wait_until="domcontentloaded", timeout=90000); pg.wait_for_timeout(3000)
+        s = BeautifulSoup(pg.content(), "html.parser")
+        print(f"GET {u} -> estat {r.status if r else '?'} | URL final {pg.url} | títol {pg.title()}")
+        print("   inputs:", [(i.get("name"), i.get("type"), i.get("placeholder")) for i in s.select("input")][:10], "| botons:", [b.get_text(strip=True)[:20] for b in s.select("button")][:6])
+    pg.goto("https://info64.org/search-player?hl=ca", wait_until="domcontentloaded", timeout=90000); pg.wait_for_timeout(3000)
+    try:
+        pg.fill("input[name=name], input[type=text], input[type=search]", "serradell")
+        pg.keyboard.press("Enter"); pg.wait_for_timeout(5000)
+        s = BeautifulSoup(pg.content(), "html.parser")
+        print("Després d'escriure i Enter -> URL", pg.url, "| files tbody:", len(s.select("table tbody tr")))
+        for tr in s.select("table tbody tr")[:40]:
+            tx = re.sub(r"\s+", " ", tr.get_text(" ", strip=True))
+            if re.search(r"silvia|andrea", I.sa(tx)): print("   ", tx[:200])
+    except Exception as e:
+        print("no s'ha pogut escriure a la cerca:", str(e)[:150])
     b.close()
-print(f"Total files úniques de les dues: {len(vistos)}")
+raise SystemExit
