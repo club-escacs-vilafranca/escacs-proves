@@ -1,0 +1,13 @@
+name: PROVA · Diagnòstic de la cerca de Chess-Results
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  cr:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -u tools/prova_cr_cerca.py | tee -a "$GITHUB_STEP_SUMMARY"
