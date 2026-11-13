@@ -18,7 +18,7 @@ with sync_playwright() as p:
             print(f"  {r.request.method} {r.status} {len(body)} B  {u[:150]}")
             open(f"mostres_brut/fide_{n[0]:02d}.html", "wb").write(body)
     pg.on("response", resp)
-    pg.goto(f"https://ratings.fide.com/profile/{ID}/calculations", wait_until="networkidle", timeout=60000); pg.wait_for_timeout(4000)
+    pg.goto(f"https://ratings.fide.com/profile/{ID}/calculations", wait_until="domcontentloaded", timeout=60000); pg.wait_for_timeout(8000)
     print("selectors de període:", pg.eval_on_selector_all("select option", "els => els.slice(0,6).map(e => e.value + '|' + e.textContent.trim())"))
     # canvia el període a l'últim i a un de més antic
     for sel in pg.query_selector_all("select"):
