@@ -1,0 +1,29 @@
+{
+ "actualitzat": "",
+ "federats": 1,
+ "socis": null,
+ "jugadors": [
+  {
+   "id": "382950",
+   "nom_cr": "SERRADELL MUÑOZ, SILVIA",
+   "nom": "Silvia Serradell",
+   "sexe": "F",
+   "elo": 1965,
+   "elo_rapid": 1946,
+   "var": 0.0,
+   "var_rapid": 0.0,
+   "titol": "",
+   "categoria": "Sub-12",
+   "fide": "54764130",
+   "elo_fide": 1836,
+   "elo_fide_rapid": 1860,
+   "ref_fce": 1867,
+   "ref_fce_mes": "202511",
+   "inc_fce": 98,
+   "ref_fide": 1779,
+   "ref_fide_mes": "202511",
+   "inc_fide": 57
+  }
+ ],
+ "inc_des": "2025-11-01"
+}

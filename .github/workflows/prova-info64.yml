@@ -1,0 +1,20 @@
+name: Prova Info64
+# Només a mà. Mateix codi que el repositori privat, però només amb la jugadora autoritzada (data/jugadors.json).
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      NOMES_PROVA: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install -q beautifulsoup4 playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/info64.py 2026-01-01 | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Desa només els resultats de la prova
+        run: |
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add data/*-jugadors.json data/resultats-jugadors.json data/jugadors.json data/brut/mostres_cr data/brut/ffe_vistos.json 2>/dev/null || true
+          git diff --cached --quiet && echo "Sense canvis" || (git commit -qm "Prova Info64" && for i in 1 2 3; do git pull -q --rebase -X theirs origin main && git push origin HEAD:main && break; sleep 5; done)
