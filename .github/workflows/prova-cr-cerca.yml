@@ -10,4 +10,5 @@ jobs:
         shell: bash -eo pipefail {0}
     steps:
       - uses: actions/checkout@v5
+      - run: pip install -q beautifulsoup4
       - run: python3 -u tools/prova_cr_cerca.py | tee -a "$GITHUB_STEP_SUMMARY"
