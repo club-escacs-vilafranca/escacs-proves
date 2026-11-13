@@ -32,7 +32,7 @@ jobs:
       run:
         shell: bash -eo pipefail {0}
     env:
-      NOMES_PROVA: ${{ inputs.tots == 'si' && '' || '1' }}
+      NOMES_PROVA: "1"
       LOGS_ANONIMS: "1"
     timeout-minutes: 90
     steps:
@@ -40,6 +40,8 @@ jobs:
       - run: pip install beautifulsoup4
       - name: Actualitza
         run: |
+          [ "${{ inputs.tots }}" = "si" ] && unset NOMES_PROVA        # segona passada: tots els jugadors (logs anònims)
+          echo "Jugadors: $([ -n "$NOMES_PROVA" ] && echo 'només les dues autoritzades' || echo 'tot el club')"
           DES="${{ inputs.des }}"
           MODE="${{ inputs.mode }}"
           if [ "${{ github.event_name }}" = "schedule" ]; then
