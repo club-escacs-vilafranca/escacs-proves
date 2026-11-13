@@ -1,0 +1,28 @@
+name: Prova de fonts (jugadora autoritzada)
+# Només es llança a mà. Llegeix pàgines públiques i desa el brut a mostres/ per poder dissenyar els importadors.
+on:
+  workflow_dispatch:
+    inputs:
+      fide:
+        description: "ID FIDE"
+        default: "54764130"
+      nom:
+        description: "Nom (amb ñ)"
+        default: "Serradell Muñoz, Silvia"
+      nom2:
+        description: "Nom (sense ñ)"
+        default: "Serradell Munoz, Silvia"
+permissions:
+  contents: write
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -u tools/prova_fonts.py "${{ inputs.fide }}" "${{ inputs.nom }}" "${{ inputs.nom2 }}"
+      - name: Desa les mostres
+        run: |
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add mostres
+          git diff --cached --quiet && echo "Sense canvis" || (git commit -qm "Mostres de la prova de fonts" && for i in 1 2 3; do git pull -q --rebase origin main && git push origin HEAD:main && break; sleep 5; done)
