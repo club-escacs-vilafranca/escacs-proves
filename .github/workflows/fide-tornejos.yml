@@ -21,6 +21,7 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v5
+      - run: pip install -q playwright && playwright install --with-deps chromium
       - name: Llista els tornejos de FIDE i compara
         env:
           MESOS: ${{ inputs.mesos }}

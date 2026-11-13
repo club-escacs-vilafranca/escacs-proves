@@ -33,11 +33,30 @@ def mesos():
     return out
 
 
+PW = {}
+
+
+def pagina():
+    """Pàgina d'un navegador real (Playwright) oberta al perfil de FIDE: des de GitHub, urllib dona timeout sempre, però el navegador hi arriba."""
+    if "pg" not in PW:
+        from playwright.sync_api import sync_playwright
+        PW["p"] = sync_playwright().start()
+        PW["b"] = PW["p"].chromium.launch()
+        PW["pg"] = PW["b"].new_page(user_agent=UA)
+        for i in range(5):
+            try:
+                PW["pg"].goto("https://ratings.fide.com/", wait_until="domcontentloaded", timeout=45000)
+                break
+            except Exception as e:
+                print(f"    FIDE (pàgina inicial): intent {i + 1} fallit ({type(e).__name__})", flush=True)
+                time.sleep(5)
+    return PW["pg"]
+
+
 def una_vegada(fide, per, t, intents=4):
     for i in range(intents):
         try:
-            rq = urllib.request.Request(URL.format(id=fide, per=per, t=t), headers={"User-Agent": UA, "X-Requested-With": "XMLHttpRequest"})
-            return urllib.request.urlopen(rq, timeout=25).read().decode("utf-8", "replace")
+            return pagina().evaluate("u => fetch(u, {headers: {'X-Requested-With': 'XMLHttpRequest'}}).then(r => r.text())", URL.format(id=fide, per=per, t=t))
         except Exception as e:
             print(f"    FIDE {per} t={t}: intent {i + 1} fallit ({type(e).__name__})", flush=True)
             time.sleep(4 * (i + 1))
@@ -88,16 +107,17 @@ def cap_resultat(r, club, fide_t):
     ini, fi = r.get("inici") or r.get("fi"), r.get("fi")
     if not (ini and fi and fide_t["inici"]):
         return False
-    marge = timedelta(days=4)
     try:
-        a, b = date.fromisoformat(ini) - marge, date.fromisoformat(fi) + marge
+        a, b = date.fromisoformat(ini), date.fromisoformat(fi)
         x, y = date.fromisoformat(fide_t["inici"]), date.fromisoformat(fide_t["fi"])
     except ValueError:
         return False
-    if y < a or x > b:
-        return False
-    t1, t2 = set(sa(r.get("torneig")).split()), set(sa(fide_t["nom"]).split())
-    return len(t1 & t2) >= max(1, min(len(t1), len(t2)) // 3)
+    buit = {"de", "del", "la", "el", "d", "l", "i", "open", "obert", "torneo", "grup", "group", "rondas", "ronda", "2026", "2025"}
+    t1 = set(sa(r.get("torneig")).split()) - buit
+    t2 = set(sa(fide_t["nom"]).split()) - buit
+    puntuacio = len(t1 & t2) / max(1, min(len(t1), len(t2)))
+    distancia = max((x - b).days, (a - y).days, 0)          # 0 = les dates se solapen; FIDE només dona les rondes ja jugades, el torneig pot acabar més tard
+    return (distancia <= 4 and puntuacio >= 0.34) or (distancia <= 60 and puntuacio >= 0.6)
 
 
 def carrega(p, per_defecte):
