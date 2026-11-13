@@ -1,0 +1,22 @@
+name: PROVA · FIDE peticions de càlculs
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fide:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install -q playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/prova_fide2.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra i desa
+        run: |
+          gpg --batch --import proves-public.asc
+          mkdir -p resultats-xifrats
+          tar czf - mostres_brut | gpg --batch --trust-model always -r proves-escacs -e -o resultats-xifrats/prova-fide2.gpg
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add resultats-xifrats; git commit -qm "FIDE: respostes xifrades" || exit 0
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
