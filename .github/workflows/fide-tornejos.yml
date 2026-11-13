@@ -1,4 +1,4 @@
-name: PROVA · FIDE: tornejos dels jugadors i comparació
+name: "PROVA · FIDE - tornejos dels jugadors i comparació"
 # FIDE diu on ha jugat cada jugador del club (nom, lloc, país, dates) i es compara amb el que ja tenim; el que falta es desa a data/fide-pendents.json
 # amb la font on buscar-ho (FRA→FFE, ITA→Vesus, ESP→Info64, tots→Chess-Results). Reintenta cada consulta i surt en vermell si FIDE no respon.
 on:
