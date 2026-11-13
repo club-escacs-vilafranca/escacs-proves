@@ -16,6 +16,11 @@ with sync_playwright() as p:
         except Exception as e:
             print(f"cerca '{q}': ERROR {str(e)[:100]}"); continue
         print(f"cerca '{q}': {len(files)} files")
+        if not files:
+            from bs4 import BeautifulSoup
+            s = BeautifulSoup(pg.content(), "html.parser")
+            print("   URL final:", pg.url, "| títol:", pg.title(), "| taules:", len(s.select("table")), "| files tbody:", len(s.select("table tbody tr")))
+            print("   Text de la pàgina:", re.sub(r"\s+", " ", s.get_text(" "))[:400])
         for f in files:
             n = I.sa(f["nom"].replace(",", " "))
             if "serradell" not in n or not any(x in n for x in NOMS): continue
