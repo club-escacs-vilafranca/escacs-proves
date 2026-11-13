@@ -1,0 +1,45 @@
+name: PROVA · FIDE: tornejos dels jugadors i comparació
+# FIDE diu on ha jugat cada jugador del club (nom, lloc, país, dates) i es compara amb el que ja tenim; el que falta es desa a data/fide-pendents.json
+# amb la font on buscar-ho (FRA→FFE, ITA→Vesus, ESP→Info64, tots→Chess-Results). Reintenta cada consulta i surt en vermell si FIDE no respon.
+on:
+  workflow_dispatch:
+    inputs:
+      mesos:
+        description: "Tram de períodes FIDE (AAAA-MM..AAAA-MM); buit = gener de l'any fins al mes passat"
+        required: false
+        default: ""
+permissions:
+  contents: write
+jobs:
+  fide:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - name: Llista els tornejos de FIDE i compara
+        env:
+          MESOS: ${{ inputs.mesos }}
+        run: |
+          EXTRA=()
+          [ -n "$MESOS" ] && EXTRA+=("--mesos=$MESOS")
+          python3 -u tools/fide_tornejos.py "${EXTRA[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - name: Desa el resultat xifrat al repositori (només es pot llegir amb la clau privada del club)
+        run: |
+          [ -f resultats.tgz.gpg ] || { echo "Sense canvis."; exit 0; }
+          mkdir -p resultats-xifrats
+          NOM="resultats-xifrats/$(basename "${GITHUB_WORKFLOW_REF%%@*}")-${GITHUB_RUN_NUMBER}.gpg"; cp resultats.tgz.gpg "$NOM"
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add resultats-xifrats
+          git commit -qm "Resultat xifrat de ${GITHUB_WORKFLOW}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
