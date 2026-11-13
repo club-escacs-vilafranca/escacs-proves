@@ -1,0 +1,23 @@
+name: PROVA · Pàgines concretes FFE i Vesus
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install -q playwright && playwright install --with-deps chromium
+      - run: python3 -u tools/prova_urls.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra les pàgines i desa-les (només es poden llegir amb la clau privada del club)
+        run: |
+          gpg --batch --import proves-public.asc
+          mkdir -p resultats-xifrats
+          tar czf - mostres_brut | gpg --batch --trust-model always -r proves-escacs -e -o resultats-xifrats/prova-urls.gpg
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add resultats-xifrats
+          git commit -qm "Pàgines FFE i Vesus xifrades" || exit 0
+          for i in 1 2 3; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
