@@ -14,6 +14,11 @@ args = [a for a in sys.argv[1:] if not a.startswith("--")]
 DES = args[0] if args else "2026-02-01"
 FINS = args[1] if len(args) > 1 else None      # límit superior opcional (AAAA-MM-DD), per repartir l'escaneig llarg en trams
 RECENT = "--recent" in sys.argv          # només els darrers 30 dies (cerca habitual de cada nit)
+OPC = dict(a[2:].split("=", 1) for a in sys.argv[1:] if a.startswith("--") and "=" in a)
+TORNEIG = OPC.get("torneig")    # --torneig=nom: només els torneigs el nom dels quals el conté (cerca per nom, p. ex. detectat a FIDE)
+MES_FIDE = OPC.get("mes")                # --mes=AAAA-MM: només la llista mensual FIDE d'aquest mes (el mes en què el torneig entra a FIDE)
+MAX_MIN = int(OPC.get("max-minuts", "0") or 0)   # pressupost de temps: desa i surt net abans que GitHub talli l'acció
+T0 = time.time()
 MESOS = ["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre"]
 VERSIO = 1
 
@@ -127,7 +132,12 @@ def main():
     resultats = {(r["fide"] or r["jugador"], r["tnr"]): r for r in antic if r.get("v") == VERSIO}
     niv = nivells()
     desd = datetime.fromisoformat(des).date()
-    claus = sorted(k for k in niv if (k[0], k[1]) >= (desd.year, desd.month) and (k[0], k[1]) <= (avui.year + (avui.month == 12), avui.month % 12 + 1))
+    lim = datetime.fromisoformat(FINS).date() if FINS else avui
+    sup = (lim.year + (lim.month == 12), lim.month % 12 + 1)
+    claus = sorted(k for k in niv if (k[0], k[1]) >= (desd.year, desd.month) and (k[0], k[1]) <= sup)
+    if MES_FIDE:
+        a, m = MES_FIDE.split("-")
+        claus = [k for k in claus if k == (int(a), int(m))] or [k for k in niv if k == (int(a), int(m))]
     print("Llistes mensuals a revisar:", claus)
     nous = 0
 
@@ -141,8 +151,14 @@ def main():
         ll = llista(niv[k])
         print("  exemples:", [(t["ref"], t["data_txt"], t["any"], data_iso(t["data_txt"], t["any"])) for t in ll[:2] + ll[-2:]], flush=True)
         for t in ll:
+            if MAX_MIN and time.time() - T0 > MAX_MIN * 60:
+                print("Pressupost de temps esgotat: es desa i se surt (es continuarà a la propera execució)", flush=True)
+                desa()
+                return
             fi = data_iso(t["data_txt"], t["any"])
             if not fi or fi < des or fi > (FINS or avui.isoformat()):
+                continue
+            if TORNEIG and sa(TORNEIG) not in sa(t["nom"]):
                 continue
             ref = t["ref"]
             v = vistos.get(ref)

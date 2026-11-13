@@ -12,6 +12,14 @@ on:
         description: "Data final opcional (AAAA-MM-DD), per repartir l'escaneig en trams"
         required: false
         default: ""
+      torneig:
+        description: "Opcional: només els torneigs el nom dels quals contingui aquest text (cerca per nom, p. ex. Narbonne)"
+        required: false
+        default: ""
+      mes:
+        description: "Opcional: només la llista FIDE d'aquest mes (AAAA-MM, el mes en què el torneig entra a FIDE)"
+        required: false
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -25,7 +33,17 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
-      - run: python3 -u tools/ffe.py ${{ inputs.des }} ${{ inputs.fins }} | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Escaneja la FFE (surt net als 45 minuts, desant el que ha trobat)
+        env:
+          DES: ${{ inputs.des }}
+          FINS: ${{ inputs.fins }}
+          TORNEIG: ${{ inputs.torneig }}
+          MES: ${{ inputs.mes }}
+        run: |
+          EXTRA=(--max-minuts=45)
+          [ -n "$TORNEIG" ] && EXTRA+=("--torneig=$TORNEIG")
+          [ -n "$MES" ] && EXTRA+=("--mes=$MES")
+          python3 -u tools/ffe.py $DES $FINS "${EXTRA[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
         run: |
           gpg --batch --import proves-public.asc
