@@ -133,38 +133,16 @@ def carrega(p, per_defecte):
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else per_defecte
 
 
-def main():
-    club = carrega("data/jugadors.json", {"jugadors": []})["jugadors"]
-    ms = mesos()
-    print("Mesos:", ms[0], "→", ms[-1], "· jugadors amb codi FIDE:", sum(1 for j in club if j.get("fide")), flush=True)
-    tornejos, fallades = {}, []
-    for j in club:
-        if not j.get("fide"):
-            continue
-        for per in ms:
-            for t in RITMES:
-                h = demana(j["fide"], per, t)
-                if h is None:
-                    fallades.append((j["nom"], per, t))
-                    continue
-                for x in analitza(h):
-                    k = (j["nom"], x["event"])
-                    e = tornejos.setdefault(k, {**x, "jugador": j["nom"], "ritmes": []})
-                    e["inici"], e["fi"] = min(e["inici"], x["inici"]), max(e["fi"], x["fi"])
-                    if RITMES[t] not in e["ritmes"]:
-                        e["ritmes"].append(RITMES[t])
-                time.sleep(1)
-        print(f"  {j['nom']}: {sum(1 for k in tornejos if k[0] == j['nom'])} tornejos", flush=True)
-    llista = sorted(tornejos.values(), key=lambda e: (e["inici"] or "", e["jugador"]))
-    os.makedirs("data", exist_ok=True)
-    json.dump({"actualitzat": datetime.now(timezone.utc).isoformat(timespec="seconds"), "mesos": ms, "fallades": [list(f) for f in fallades], "tornejos": llista},
-              open(SORTIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    # comparació amb el que ja tenim
+def compara(llista, ms):
+    """Creua la llista de FIDE amb el que ja tenim (Chess-Results, FFE, Info64) i desa els pendents. Ignora el que s'ha jugat abans del tram (p. ex. el desembre anterior)."""
+    principi = ms[0] + "-01"
     tenim = []
     for f in ("resultats-jugadors", "ffe-jugadors", "info64-jugadors"):
         tenim += carrega(f"data/{f}.json", {}).get("resultats", [])
     pendents, trobats, exclosos = [], 0, 0
     for e in llista:
+        if e["fi"] and e["fi"] < principi:
+            continue
         if EXCLOSOS.search(e["nom"]):
             exclosos += 1
             continue
@@ -178,6 +156,56 @@ def main():
     print(f"Tornejos a FIDE: {len(llista)} · ja trobats: {trobats} · Lliga Catalana (a part): {exclosos} · pendents: {len(pendents)}")
     for p in pendents:
         print(f"  PENDENT {p['jugador']} · {p['inici']} · {p['nom'][:55]} · {p['lloc']} {p['pais']} → {' / '.join(p['buscar_a'])}")
+
+
+def main():
+    club = carrega("data/jugadors.json", {"jugadors": []})["jugadors"]
+    ms = mesos()
+    print("Mesos:", ms[0], "→", ms[-1], "· jugadors amb codi FIDE:", sum(1 for j in club if j.get("fide")), flush=True)
+    tornejos, fallades = {}, []
+
+    def llegeix(j, per, t):
+        """Demana un període i hi afegeix els tornejos; torna True si ha tornat contingut, False si és buit, None si FIDE no ha respost."""
+        h = demana(j["fide"], per, t)
+        if h is None:
+            return None
+        for x in analitza(h):
+            e = tornejos.setdefault((j["nom"], x["event"]), {**x, "jugador": j["nom"], "ritmes": []})
+            e["inici"], e["fi"] = min(e["inici"], x["inici"]), max(e["fi"], x["fi"])
+            if RITMES[t] not in e["ritmes"]:
+                e["ritmes"].append(RITMES[t])
+        return len(h.strip()) >= 100
+
+    buits = []
+    for j in club:
+        if not j.get("fide"):
+            continue
+        for per in ms:
+            for t in RITMES:
+                r = llegeix(j, per, t)
+                if r is None:
+                    fallades.append((j["nom"], per, t))
+                elif not r:
+                    buits.append((j, per, t))
+                time.sleep(1.5)
+        print(f"  {j['nom']}: {sum(1 for k in tornejos if k[0] == j['nom'])} tornejos (1a passada)", flush=True)
+    # FIDE de vegades limita les consultes i torna buit: tot el que ha tornat buit es torna a demanar, més a poc a poc, fins a dues passades més
+    for passada in (2, 3):
+        pendent, buits = buits, []
+        if pendent:
+            print(f"  passada {passada}: {len(pendent)} períodes buits es tornen a demanar", flush=True)
+        for j, per, t in pendent:
+            time.sleep(3)
+            r = llegeix(j, per, t)
+            if r is None:
+                fallades.append((j["nom"], per, t))
+            elif not r:
+                buits.append((j, per, t))
+    llista = sorted(tornejos.values(), key=lambda e: (e["inici"] or "", e["jugador"]))
+    os.makedirs("data", exist_ok=True)
+    json.dump({"actualitzat": datetime.now(timezone.utc).isoformat(timespec="seconds"), "mesos": ms, "fallades": [list(f) for f in fallades], "tornejos": llista},
+              open(SORTIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    compara(llista, ms)
     if fallades:
         print(f"::warning::FIDE no ha respost en {len(fallades)} consultes (després de 5 intents)")
         sys.exit(1)       # un resultat incomplet no es dona per bo: l'acció surt en vermell
