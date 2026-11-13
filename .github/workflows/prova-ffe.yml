@@ -6,6 +6,9 @@ permissions:
 jobs:
   prova:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
     timeout-minutes: 45
     env:
       NOMES_PROVA: "1"

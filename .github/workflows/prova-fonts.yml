@@ -17,6 +17,9 @@ permissions:
 jobs:
   prova:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
