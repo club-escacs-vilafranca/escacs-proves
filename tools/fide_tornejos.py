@@ -33,11 +33,11 @@ def mesos():
     return out
 
 
-def una_vegada(fide, per, t, intents=5):
+def una_vegada(fide, per, t, intents=4):
     for i in range(intents):
         try:
             rq = urllib.request.Request(URL.format(id=fide, per=per, t=t), headers={"User-Agent": UA, "X-Requested-With": "XMLHttpRequest"})
-            return urllib.request.urlopen(rq, timeout=40).read().decode("utf-8", "replace")
+            return urllib.request.urlopen(rq, timeout=25).read().decode("utf-8", "replace")
         except Exception as e:
             print(f"    FIDE {per} t={t}: intent {i + 1} fallit ({type(e).__name__})", flush=True)
             time.sleep(4 * (i + 1))
