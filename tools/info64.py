@@ -81,7 +81,7 @@ def carrega(pg, url, espera=5000):
 
 def cerca(pg, cognoms):
     """Files de la cerca de jugadors: [{nom, torneig, inici, fi, href_jugador, href_torneig}]."""
-    s = carrega(pg, "/search-player?hl=ca&name=" + cognoms.replace(" ", "+"), 3000)
+    s = carrega(pg, "/search-player?name=" + cognoms.replace(" ", "+"), 3000)
     out = []
     for tr in s.select("table tbody tr"):
         td = tr.select("td")
@@ -97,7 +97,7 @@ def cerca(pg, cognoms):
 
 def fitxa(pg, href):
     """Fitxa d'un jugador en un torneig: dades generals i partides amb la variació FIDE que dona Info64."""
-    s = carrega(pg, href + "?hl=ca", 3000)
+    s = carrega(pg, href, 3000)
     d = {}
     for tr in s.select("table")[0].select("tr") if s.select("table") else []:
         if tr.th and tr.td:
@@ -138,7 +138,7 @@ def fitxa(pg, href):
 def calendari_rondes(pg, href_t):
     """Data de cada ronda segons la pàgina de calendari del torneig (/schedule): {ronda: 'AAAA-MM-DD'}."""
     try:
-        s = carrega(pg, href_t + "/schedule?hl=ca", 3000)
+        s = carrega(pg, href_t + "/schedule", 3000)
     except Exception:
         return {}
     out = {}
@@ -152,7 +152,7 @@ def calendari_rondes(pg, href_t):
 
 
 def participants(pg, href_t):
-    s = carrega(pg, href_t + "/standings?hl=ca", 3000)
+    s = carrega(pg, href_t + "/standings", 3000)
     tb = next((t for t in s.select("table") if t.select("tbody tr")), None)
     return len(tb.select("tbody tr")) if tb else None
 
@@ -172,6 +172,7 @@ def main():
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page()
+        pg.goto(BASE + "/?hl=ca", wait_until="domcontentloaded", timeout=90000); pg.wait_for_timeout(2000)     # fixa l'idioma (cookie): els URL amb ?hl=ca ara redirigeixen a l'inici
         for j in club:
             if time.time() - inici > 50 * 60:
                 print("Límit de temps: es completa a la propera execució")
