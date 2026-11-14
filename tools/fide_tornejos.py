@@ -72,22 +72,20 @@ def una_vegada(fide, per, t, intents=4):
     return None
 
 
+BUIT_REAL = "No records found in individual calculations"
+
+
 def demana(fide, per, t):
-    """HTML de la llista de tornejos d'un període; None si FIDE no respon després dels reintents.
-    FIDE retorna de tant en tant (≈8 %) una resposta buida de 3 bytes a una consulta que sí té tornejos: un buit no es dona per bo fins que
-    dues consultes més no el confirmen (es queda amb la resposta més llarga)."""
-    h = una_vegada(fide, per, t)
-    if h is None or len(h.strip()) >= 100:
-        return h
-    millor = h
-    for _ in range(2):
-        time.sleep(0.7)
-        x = una_vegada(fide, per, t)
-        if x is None:
+    """HTML de la llista de tornejos d'un període. Tres casos: contingut (tornejos), «No records found…» (període realment buit: es dona per bo)
+    o resposta en blanc, que vol dir que FIDE ens està limitant el ritme: s'espera cada cop més i es reintenta; si no es resol, None (mai es dona un buit fals per bo)."""
+    for espera in (0, 4, 12, 30, 60):
+        time.sleep(espera)
+        h = una_vegada(fide, per, t)
+        if h is None:
             return None
-        if len(x) > len(millor):
-            millor = x
-    return millor
+        if BUIT_REAL in h or len(h.strip()) >= 100:
+            return h
+    return None
 
 
 def analitza(h):
@@ -174,9 +172,8 @@ def main():
             e["inici"], e["fi"] = min(e["inici"], x["inici"]), max(e["fi"], x["fi"])
             if RITMES[t] not in e["ritmes"]:
                 e["ritmes"].append(RITMES[t])
-        return len(h.strip()) >= 100
+        return BUIT_REAL not in h
 
-    buits = []
     for j in club:
         if not j.get("fide"):
             continue
@@ -185,22 +182,8 @@ def main():
                 r = llegeix(j, per, t)
                 if r is None:
                     fallades.append((j["nom"], per, t))
-                elif not r:
-                    buits.append((j, per, t))
                 time.sleep(1.5)
-        print(f"  {j['nom']}: {sum(1 for k in tornejos if k[0] == j['nom'])} tornejos (1a passada)", flush=True)
-    # FIDE de vegades limita les consultes i torna buit: tot el que ha tornat buit es torna a demanar, més a poc a poc, fins a dues passades més
-    for passada in (2, 3):
-        pendent, buits = buits, []
-        if pendent:
-            print(f"  passada {passada}: {len(pendent)} períodes buits es tornen a demanar", flush=True)
-        for j, per, t in pendent:
-            time.sleep(3)
-            r = llegeix(j, per, t)
-            if r is None:
-                fallades.append((j["nom"], per, t))
-            elif not r:
-                buits.append((j, per, t))
+        print(f"  {j['nom']}: {sum(1 for k in tornejos if k[0] == j['nom'])} tornejos", flush=True)
     llista = sorted(tornejos.values(), key=lambda e: (e["inici"] or "", e["jugador"]))
     os.makedirs("data", exist_ok=True)
     json.dump({"actualitzat": datetime.now(timezone.utc).isoformat(timespec="seconds"), "mesos": ms, "fallades": [list(f) for f in fallades], "tornejos": llista},
