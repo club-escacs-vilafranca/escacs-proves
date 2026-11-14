@@ -107,6 +107,19 @@ def grup_base(nom):
     return n
 
 
+def fitxes(nom):
+    """Paraules comparables d'un nom de torneig: «CE Sub-08» i «Campeonato de España Sub-8» han de coincidir (sigles ampliades, zeros inicials fora)."""
+    out = set()
+    for w in sa(nom).split():
+        if w in ("ce", "cto", "camp"):
+            out |= {"campeonato", "espana"}
+        elif w.isdigit():
+            out.add(w.lstrip("0") or "0")
+        else:
+            out.add(w)
+    return out
+
+
 def cap_resultat(r, club, fide_t):
     """True si un resultat que ja tenim (qualsevol font) correspon al torneig de FIDE per al mateix jugador."""
     if r.get("jugador") != club:
@@ -120,8 +133,8 @@ def cap_resultat(r, club, fide_t):
     except ValueError:
         return False
     buit = {"de", "del", "la", "el", "d", "l", "i", "open", "obert", "torneo", "grup", "group", "rondas", "ronda", "2026", "2025"}
-    t1 = set(sa(r.get("torneig")).split()) - buit
-    t2 = set(sa(fide_t["nom"]).split()) - buit
+    t1 = fitxes(r.get("torneig")) - buit
+    t2 = fitxes(fide_t["nom"]) - buit
     puntuacio = len(t1 & t2) / max(1, min(len(t1), len(t2)))
     distancia = max((x - b).days, (a - y).days, 0)          # 0 = les dates se solapen; FIDE només dona les rondes ja jugades, el torneig pot acabar més tard
     return (distancia <= 4 and puntuacio >= 0.34) or (distancia <= 60 and puntuacio >= 0.6)
