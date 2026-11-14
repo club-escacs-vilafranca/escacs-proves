@@ -58,7 +58,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Avisa dels tornejos sense data límit d'inscripció
-        run: python3 -u tools/avis_inscripcio.py | tee -a "$GITHUB_STEP_SUMMARY"
+        run: python3 -u tools/avis_inscripcio.py --cap-incidencia | tee -a "$GITHUB_STEP_SUMMARY"
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
