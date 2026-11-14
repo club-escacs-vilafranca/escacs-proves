@@ -133,7 +133,8 @@ def carrega(p, per_defecte):
 
 def compara(llista, ms):
     """Creua la llista de FIDE amb el que ja tenim (Chess-Results, FFE, Info64) i desa els pendents. Ignora el que s'ha jugat abans del tram (p. ex. el desembre anterior)."""
-    principi = ms[0] + "-01"
+    a, m = map(int, ms[0].split("-"))
+    principi = f"{a - (m == 1)}-{(m - 2) % 12 + 1:02d}-01"      # el període AAAA-MM de FIDE recull el que s'ha jugat el mes anterior
     tenim = []
     for f in ("resultats-jugadors", "ffe-jugadors", "info64-jugadors"):
         tenim += carrega(f"data/{f}.json", {}).get("resultats", [])
