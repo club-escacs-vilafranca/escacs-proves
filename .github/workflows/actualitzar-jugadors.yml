@@ -54,7 +54,7 @@ jobs:
       - name: Afegeix al calendari els tornejos on han jugat jugadors del club i que encara no hi són
         run: python3 -u tools/calendari_auto.py | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Avisa dels tornejos nous que potser no valen per a l'Elo
-        run: python3 -u tools/avis_elo.py | tee -a "$GITHUB_STEP_SUMMARY"
+        run: python3 -u tools/avis_elo.py --cap-incidencia | tee -a "$GITHUB_STEP_SUMMARY"
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Avisa dels tornejos sense data límit d'inscripció
