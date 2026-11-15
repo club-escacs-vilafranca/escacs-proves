@@ -1,0 +1,36 @@
+name: "PROVA · Exploració de la grille de la FFE"
+# Prova puntual: carrega pàgines de Vesus (esdeveniment i torneigs) amb un navegador i en desa l'estructura i les peticions de xarxa, xifrades.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  vesus:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    env:
+      NOMES_PROVA: "1"
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Instal·la Playwright
+        run: pip install -q playwright && playwright install --with-deps chromium
+      - name: Explora la FFE
+        run: python3 -u tools/explora_ffe_grille.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
+        run: |
+          gpg --batch --import proves-public.asc
+          git status --porcelain data | sed 's/^...//' > /tmp/canvis.txt; cat /tmp/canvis.txt
+          tar czf - -T /tmp/canvis.txt 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o resultats.tgz.gpg || true
+          ls -la resultats.tgz.gpg || echo "Sense canvis."
+      - name: Desa el resultat xifrat al repositori (només es pot llegir amb la clau privada del club)
+        run: |
+          [ -f resultats.tgz.gpg ] || { echo "Sense canvis."; exit 0; }
+          mkdir -p resultats-xifrats
+          NOM="resultats-xifrats/$(basename "${GITHUB_WORKFLOW_REF%%@*}")-${GITHUB_RUN_NUMBER}.gpg"; cp resultats.tgz.gpg "$NOM"
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add resultats-xifrats
+          git commit -qm "Resultat xifrat de ${GITHUB_WORKFLOW}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
