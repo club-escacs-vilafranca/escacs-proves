@@ -86,6 +86,7 @@ def pagina_jugador(pg, href):
 
 
 def partides_de(files):
+    # Vesus dona 1399 als jugadors sense Elo (valor per defecte): no és un Elo real i no s'usa per calcular la variació
     out = []
     for f in files:
         try:
@@ -95,7 +96,7 @@ def partides_de(files):
             if res not in ("1", "0", "½"):
                 out.append({"ronda": rd, "res": res, "rival": "", "inc": True, "brut": f})
                 continue
-            out.append({"ronda": rd, "rival": nom_public(nom) if "," in nom else nom, "rtg_i": int(rtg) if rtg.isdigit() else None, "res": res, "club": fed, "fid": "", "color": "", "num_rival": f[2]})
+            out.append({"ronda": rd, "rival": nom_public(nom) if "," in nom else nom, "rtg_i": int(rtg) if rtg.isdigit() and rtg != "1399" else None, "res": res, "club": fed, "fid": "", "color": "", "num_rival": f[2]})
         except Exception:
             out.append({"ronda": None, "brut": f})
     return out
@@ -171,7 +172,7 @@ def main():
                             tot += g["fide"]["d"]
                     ini, fi = (f["dates"] + ["", ""])[:2] if f["dates"] else ("", "")
                     resultats.append({"jugador": nom_public(j["nom_cr"]), "fide": fide, "font": "vesus", "v": VERSIO, "tnr": f"vesus-{href.split('/')[2].split('?')[0]}",
-                                      "snr": None, "torneig": f"{nom_ev} · {sec}" if sec else nom_ev, "fi": fi or "", "inici": ini or None, "club": "", "fed": "ESP",
+                                      "snr": None, "torneig": f"{f['titol_pag'] or nom_ev} · {sec}" if sec else (f["titol_pag"] or nom_ev), "fi": fi or "", "inici": ini or None, "club": "", "fed": "ESP",
                                       "lloc": int(m["Position"]) if m.get("Position", "").isdigit() else None, "rondes": len([g for g in parts if g.get("ronda")]), "de": None,
                                       "url": BASE + href.split("?")[0], "punts": m.get("Points", ""), "modalitat": f["ritme"], "rtg_i": rtg,
                                       "elo_fide": {"var": round(tot, 1), "k": k}, "var_vesus": m.get("Rating change"), "partides": parts})
