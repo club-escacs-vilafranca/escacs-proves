@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Resultats dels jugadors del club a Vesus (vesus.org, plataforma italiana) -> data/vesus-jugadors.json.
-Només mira endavant: els esdeveniments «en curs» i els «propers» (mai l'arxiu). Per a cada esdeveniment obre el resum de la federació ESP, descarta els
+Només mira endavant: els esdeveniments «en curs» i els «propers» (mai l'arxiu). Per a cada torneig obre la pàgina, mira si hi ha jugadors ESP, descarta els
 jugadors que no són del club (nom) i confirma que són la mateixa persona pel codi FIDE de la seva fitxa. Les partides surten amb el rival, el seu Elo i el
 resultat; la variació FIDE la calcula aquest script (la de Vesus es desa només com a control: `var_vesus`).
 Els torneigs que ja arriben per Chess-Results (ritmes lents) es descarten en integrar-los al pas comú; aquí interessen els que no hi són (p. ex. el blitz).
-Ús: python3 tools/vesus.py [--esdeveniments id1,id2]   (per provar amb esdeveniments concrets, inclosos els ja acabats)"""
+Ús: python3 tools/vesus.py [--torneigs id1,id2]   (per provar amb torneigs concrets, inclosos els ja acabats)"""
 import json, os, re, sys, unicodedata
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
@@ -36,9 +36,10 @@ def carrega(pg, url, espera=3500):
     pg.wait_for_timeout(espera)
 
 
-def events_llista(pg, url):
-    carrega(pg, url)
-    return pg.evaluate("() => [...new Set([...document.querySelectorAll('a[href^=\"/event/\"]')].map(a => a.getAttribute('href').split('/')[2]))]")
+def torneigs_llista(pg, url):
+    """Identificadors dels torneigs d'un llistat (en curs / propers); Vesus enllaça cada torneig, no l'esdeveniment."""
+    pg.goto(url, wait_until="networkidle", timeout=60000); pg.wait_for_timeout(3000)
+    return pg.evaluate("() => [...new Set([...document.querySelectorAll('a[href^=\"/tournament/\"]')].map(a => a.getAttribute('href').split('/')[2].split('?')[0]))]")
 
 
 def k_fide(elo, any_naix):
@@ -82,7 +83,14 @@ def pagina_jugador(pg, href):
         cur.append(t)
         if len(cur) >= 4 and re.fullmatch(r"[A-Z]{3}", cur[-5] if len(cur) >= 5 else "") and re.fullmatch(r"\d+(\.\d+)?|½", cur[-3]) and re.fullmatch(r"\d+", cur[-2]) and re.fullmatch(r"\d+", cur[-1]):
             files.append(cur); cur = []
-    return {"meta": d, "ritme": ritme, "dates": [iso(x) for x in dates[:2]], "titol_pag": h1, "capcalera": capcalera, "files": files, "resta": cur}
+    noms = []
+    for c in capcalera:
+        if re.match(r"\d\d/\d\d/\d{4}", c):
+            break
+        if c in ("CONTACTS", "SUPPORT") or c.isdigit() or c.startswith("Photo:"):
+            continue
+        noms.append(c)
+    return {"meta": d, "ritme": ritme, "noms": noms, "dates": [iso(x) for x in dates[:2]], "titol_pag": h1, "capcalera": capcalera, "files": files, "resta": cur}
 
 
 def partides_de(files):
@@ -103,8 +111,8 @@ def partides_de(files):
 
 
 def main():
-    arg = next((a for a in sys.argv[1:] if a.startswith("--esdeveniments")), None)
-    forcats = (sys.argv[sys.argv.index(arg) + 1] if arg == "--esdeveniments" else arg.split("=", 1)[1]).split(",") if arg else None
+    arg = next((a for a in sys.argv[1:] if a.startswith("--torneigs")), None)
+    forcats = (sys.argv[sys.argv.index(arg) + 1] if arg == "--torneigs" else arg.split("=", 1)[1]).split(",") if arg else None
     club = json.load(open("data/jugadors.json", encoding="utf-8"))["jugadors"]
     if os.environ.get("NOMES_PROVA"):
         club = [x for x in club if x.get("fide")]
@@ -120,47 +128,38 @@ def main():
         return next((j for k, j in per_nom.items() if len(tk) >= 2 and tk <= k), None)
 
     resultats, previs, vistos = [], [], []
+    MAX_PROPERS = int(os.environ.get("VESUS_MAX_PROPERS", "60"))
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36")
-        en_curs = forcats or events_llista(pg, BASE + "/inprogress")
-        propers = [] if forcats else [e for e in events_llista(pg, BASE + "/") if e not in en_curs]
-        print(f"Vesus: {len(en_curs)} esdeveniments en curs, {len(propers)} de propers")
-        for ev, futur in [(e, False) for e in en_curs] + [(e, True) for e in propers]:
+        en_curs = forcats or torneigs_llista(pg, BASE + "/inprogress")
+        propers = [] if forcats else [t for t in torneigs_llista(pg, BASE + "/") if t not in en_curs][:MAX_PROPERS]
+        print(f"Vesus: {len(en_curs)} torneigs en curs, {len(propers)} de propers")
+        for tid, futur in [(t, False) for t in en_curs] + [(t, True) for t in propers]:
             try:
-                carrega(pg, f"{BASE}/event/{ev}/federationSummary?federation=ESP", 3000)
+                pg.goto(f"{BASE}/tournament/{tid}", wait_until="domcontentloaded", timeout=60000); pg.wait_for_timeout(5000)
                 L = linies(pg)
-                nom_ev = next((L[i + 1] for i, l in enumerate(L) if l == "Wear your way of living chess."), "")
-                # l'esdeveniment és el primer títol després del menú; es llegeix millor de la capçalera
-                cap = pg.evaluate("() => { const h = document.querySelector('h1,h2'); return h ? h.innerText : ''; }").strip()
-                nom_ev = cap or nom_ev
-                links = pg.evaluate("() => [...document.querySelectorAll('a[href*=\"rankedId=\"]')].map(a => a.getAttribute('href'))")
-                # seccions: nom del torneig = línia abans de «UNFOLD ALL»/«FOLD ALL»; jugadors = el text abans de «ESP»
-                jug = []   # (torneig, nom)
-                sec = ""
+                if "ESP" not in L:
+                    vistos.append(tid); continue
+                links = pg.evaluate("() => [...document.querySelectorAll('a[href*=\"rankedId=\"]')].map(a => [a.getAttribute('href'), a.innerText.trim()])")
+                trobats = {}
                 for i, l in enumerate(L):
-                    if i + 1 < len(L) and L[i + 1] in ("UNFOLD ALL", "FOLD ALL"):
-                        sec = l
-                    if l == "ESP" and i > 0:
-                        nm = L[i - 1]
-                        if nm in TITOLS and i > 1:
-                            nm = L[i - 2]
-                        jug.append((sec, nm))
-                if len(jug) != len(links):
-                    print(f"  {ev}: {len(jug)} jugadors ESP però {len(links)} enllaços; es fa servir el mínim", flush=True)
-                for (sec, nm), href in zip(jug, links):
-                    j = club_per_nom(nm)
-                    if not j:
-                        continue
+                    if l == "ESP":
+                        for c in (L[i - 1], L[i + 1] if i + 1 < len(L) else "", L[i - 2], L[i + 2] if i + 2 < len(L) else ""):
+                            if "," in c and club_per_nom(c):
+                                trobats[c] = club_per_nom(c); break
+                for nm, j in trobats.items():
+                    href = next((h for h, t in links if t == nm), None)
+                    if not href:
+                        print(f"  {tid}: «{nm}» sense enllaç a la fitxa", flush=True); continue
                     if futur:
-                        previs.append({"esdeveniment": ev, "nom_esdeveniment": nom_ev, "torneig": sec, "jugador": nom_public(j["nom_cr"]), "fide": j.get("fide"), "url": f"{BASE}/event/{ev}"})
+                        previs.append({"torneig": tid, "jugador": nom_public(j["nom_cr"]), "fide": j.get("fide"), "url": f"{BASE}/tournament/{tid}"})
                         continue
                     f = pagina_jugador(pg, href)
                     m = f["meta"]
                     fide = re.sub(r"\D", "", m.get("Fide Id", ""))
                     if not fide or fide != str(j.get("fide") or ""):
-                        print(f"  {ev}: «{nm}» no coincideix en FIDE ({fide} ≠ {j.get('fide')}); descartat")
-                        continue
+                        print(f"  {tid}: «{nm}» no coincideix en FIDE ({fide} ≠ {j.get('fide')}); descartat"); continue
                     rtg = int(m["Rating"]) if m.get("Rating", "").isdigit() else None
                     any_n = int(m["Year"]) if m.get("Year", "").isdigit() else None
                     k = k_fide(rtg or 0, any_n)
@@ -171,17 +170,16 @@ def main():
                             g["fide"] = {"d": delta(rtg, g["rtg_i"], g["res"], k), "k": k, "r": rtg, "opp": g["rtg_i"]}
                             tot += g["fide"]["d"]
                     ini, fi = (f["dates"] + ["", ""])[:2] if f["dates"] else ("", "")
-                    resultats.append({"jugador": nom_public(j["nom_cr"]), "fide": fide, "font": "vesus", "v": VERSIO, "tnr": f"vesus-{href.split('/')[2].split('?')[0]}",
-                                      "snr": None, "torneig": f"{f['titol_pag'] or nom_ev} · {sec}" if sec else (f["titol_pag"] or nom_ev), "fi": fi or "", "inici": ini or None, "club": "", "fed": "ESP",
+                    nom_t = " · ".join(x for x in f["noms"] if x)
+                    resultats.append({"jugador": nom_public(j["nom_cr"]), "fide": fide, "font": "vesus", "v": VERSIO, "tnr": f"vesus-{tid}",
+                                      "snr": None, "torneig": nom_t, "fi": fi or "", "inici": ini or None, "club": "", "fed": "ESP",
                                       "lloc": int(m["Position"]) if m.get("Position", "").isdigit() else None, "rondes": len([g for g in parts if g.get("ronda")]), "de": None,
-                                      "url": BASE + href.split("?")[0], "punts": m.get("Points", ""), "modalitat": f["ritme"], "rtg_i": rtg,
+                                      "url": f"{BASE}/tournament/{tid}", "punts": m.get("Points", ""), "modalitat": f["ritme"], "rtg_i": rtg,
                                       "elo_fide": {"var": round(tot, 1), "k": k}, "var_vesus": m.get("Rating change"), "partides": parts})
-                    print(f"  {ev}: {nom_public(j['nom_cr'])} · {sec} · {m.get('Points')} pts · {len(parts)} partides · var {round(tot, 1)} (Vesus {m.get('Rating change')}) · ritme {f['ritme']} · {f['dates']}", flush=True)
-                    if os.environ.get("NOMES_PROVA"):
-                        resultats[-1]["_cap"] = f["capcalera"]; resultats[-1]["_titol"] = f["titol_pag"]; resultats[-1]["_resta"] = f["resta"]
-                vistos.append(ev)
+                    print(f"  {tid}: {nom_public(j['nom_cr'])} · {nom_t} · {m.get('Points')} pts · {len(parts)} partides · var {round(tot, 1)} (Vesus {m.get('Rating change')}) · ritme {f['ritme']} · {f['dates']}", flush=True)
+                vistos.append(tid)
             except Exception as e:
-                print(f"  {ev}: error {type(e).__name__}: {str(e)[:150]}", flush=True)
+                print(f"  {tid}: error {type(e).__name__}: {str(e)[:150]}", flush=True)
         b.close()
     os.makedirs("data", exist_ok=True)
     json.dump({"actualitzat": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "resultats": resultats, "previs": previs}, open(SORTIDA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

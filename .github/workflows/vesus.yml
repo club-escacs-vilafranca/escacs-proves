@@ -3,8 +3,8 @@ name: "PROVA · Resultats de Vesus"
 on:
   workflow_dispatch:
     inputs:
-      esdeveniments:
-        description: "Opcional: identificadors d'esdeveniments separats per comes (p. ex. sTwKTWvd per provar amb un d'acabat)"
+      torneigs:
+        description: "Opcional: identificadors de torneigs separats per comes (p. ex. 2YMZzD3y,gzam-Uzq per provar amb acabats)"
         default: ""
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
         run: pip install -q playwright && playwright install --with-deps chromium
       - name: Llegeix Vesus
         run: |
-          EXTRA=(); [ -n "${{ inputs.esdeveniments }}" ] && EXTRA=(--esdeveniments "${{ inputs.esdeveniments }}")
+          EXTRA=(); [ -n "${{ inputs.torneigs }}" ] && EXTRA=(--torneigs "${{ inputs.torneigs }}")
           python3 -u tools/vesus.py "${EXTRA[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Xifra els resultats (la clau pública és al repositori; només la llegeix qui té la privada)
         run: |
