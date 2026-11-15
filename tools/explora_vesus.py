@@ -10,7 +10,7 @@ with sync_playwright() as p:
     out["cards"] = pg.evaluate("""() => [...document.querySelectorAll('a[href^="/tournament/"]')].slice(0, 6).map(a => ({href: a.getAttribute('href'), txt: a.innerText.slice(0, 80), pare: (a.closest('[class]') || {}).className, html: (a.parentElement.parentElement.outerHTML || '').slice(0, 700)}))""")
     out["event_links"] = pg.evaluate("""() => [...document.querySelectorAll('a[href^="/event/"]')].map(a => [a.getAttribute('href'), a.innerText.slice(0, 60), (a.closest('[class]')||{}).className])""")
     t0 = out["cards"][0]["href"]
-    pg.goto("https://vesus.org" + t0, wait_until="networkidle", timeout=60000); pg.wait_for_timeout(3000)
+    pg.goto("https://vesus.org" + t0, wait_until="domcontentloaded", timeout=60000); pg.wait_for_timeout(8000)
     out["tornejos_enllacos"] = pg.evaluate("() => [...document.querySelectorAll('a[href]')].map(a => [a.getAttribute('href'), a.innerText.slice(0, 50)]).filter(x => !/^\\/(account|content|shop|contacts|donate|games|players|archive|inprogress)/.test(x[0]))")[:40]
     out["tornejos_text"] = pg.evaluate("() => document.body.innerText")[:1500]
     b.close()
