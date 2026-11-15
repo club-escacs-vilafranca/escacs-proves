@@ -948,6 +948,18 @@ def main(des="2026-09-01"):
         if ll.get("lloc"):
             r["lloc"] = ll["lloc"]
         r["fora_cat"] = fora_de_catalunya(ll.get("lloc"), ll.get("fed")) or bool(FORA_FCE.search(r["torneig"]))
+    # Torneigs que encara no han començat (fins a 60 dies endavant) amb jugadors del club inscrits: es desen a part (data/previs-jugadors.json),
+    # només per mostrar a Competicions qui s'hi ha apuntat; no compten com a resultats (no tenen partides ni Elo).
+    limit_previ = (datetime.date.today() + datetime.timedelta(days=60)).isoformat()
+    previs = {}
+    for r in resultats:
+        if r["inici"] and avui_iso < r["inici"] <= limit_previ:
+            p_ = previs.setdefault(r["tnr"], {"tnr": r["tnr"], "torneig": r["torneig"], "inici": r["inici"], "fi": r["fi"], "lloc": r.get("lloc", ""), "fed": r.get("fed", ""),
+                                              "url": f"https://s1.chess-results.com/tnr{r['tnr']}.aspx?lan=1", "jugadors": []})
+            if r["jugador"] not in p_["jugadors"]:
+                p_["jugadors"].append(r["jugador"])
+    json.dump({"actualitzat": ara, "previs": sorted(previs.values(), key=lambda x: (x["inici"], x["torneig"]))}, open("data/previs-jugadors.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"Torneigs per començar amb jugadors del club: {len(previs)}")
     resultats = [r for r in resultats if not r["inici"] or r["inici"] <= avui_iso]     # només els que ja han començat
     resultats.sort(key=lambda r: (r["fi"], r["jugador"]), reverse=True)
     json.dump({"actualitzat": ara, "des": des, "resultats": resultats}, open(D_RES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
