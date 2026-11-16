@@ -1,0 +1,31 @@
+name: FCE · Historial mensual d'Elo (tanda)
+# Baixa de cercaelo.php l'Elo mensual d'una tanda de jugadors de la FCE (dades obertes) i el desa a data/fce_hist/. Manual.
+on:
+  workflow_dispatch:
+    inputs:
+      inici: {description: "Posició inicial a data/fce_ids.json", default: "0"}
+      maxim: {description: "Quants jugadors (20 = prova)", default: "20"}
+      pausa: {description: "Segons entre consultes", default: "1.0"}
+
+permissions:
+  contents: write
+concurrency: fce-historial
+
+jobs:
+  tanda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      INICI: ${{ inputs.inici }}
+      MAXIM: ${{ inputs.maxim }}
+      PAUSA: ${{ inputs.pausa }}
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -u tools/fce_historial.py --inici "$INICI" --max "$MAXIM" --pausa "$PAUSA" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Desa
+        if: always()
+        run: |
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add data/fce_hist
+          git commit -qm "FCE historial: tanda $INICI (+$MAXIM)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
