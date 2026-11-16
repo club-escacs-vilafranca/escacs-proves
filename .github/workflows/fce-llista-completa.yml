@@ -1,0 +1,21 @@
+name: FCE · Llista completa amb categoria (una consulta)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  llista:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -u tools/fce_llista_completa.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Desa
+        run: |
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add data/fce_llista.json.gz
+          git commit -qm "FCE: llista completa amb categoria" || exit 0
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin main && git push -q origin HEAD:main && break; sleep 5; done
