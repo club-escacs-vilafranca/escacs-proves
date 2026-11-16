@@ -19,6 +19,9 @@ jobs:
       INICI: ${{ inputs.inici }}
       MAXIM: ${{ inputs.maxim }}
       PAUSA: ${{ inputs.pausa }}
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
     steps:
       - uses: actions/checkout@v5
       - run: python3 -u tools/fce_historial.py --inici "$INICI" --max "$MAXIM" --pausa "$PAUSA" | tee -a "$GITHUB_STEP_SUMMARY"

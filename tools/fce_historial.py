@@ -38,6 +38,7 @@ def main():
     ap.add_argument("--pausa", type=float, default=1.0)
     a = ap.parse_args()
     ids = json.load(open("data/fce_ids.json"))[a.inici:a.inici + a.max]
+    os.makedirs("data/fce_hist", exist_ok=True)
     ruta = "data/fce_hist/p%d.json" % a.inici
     dades = json.load(open(ruta)) if os.path.exists(ruta) else {}
     pend = [i for i in ids if i not in dades]
