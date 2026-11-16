@@ -28,7 +28,9 @@ def analitza(txt):
         m = re.match(r"\s*(20\d{2}(?:0[1-9]|1[0-2]))\s+(\d{3,4})?\s*(\d{3,4})?\s*$", lin.replace("\t", " "))
         if m:
             out[m.group(1)] = [int(m.group(2)) if m.group(2) else None, int(m.group(3)) if m.group(3) else None]
-    return out
+    # Només el 2025 en endavant, més l'últim valor anterior (la base per arrossegar l'Elo)
+    base = [k for k in sorted(out) if k < "202501"][-1:]
+    return {k: out[k] for k in sorted(out) if k >= "202501" or k in base}
 
 
 def main():
