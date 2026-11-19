@@ -1,0 +1,57 @@
+name: PROVA · Cadena de fases de jugadors.py contra el codi antic
+# Executa el codi antic (tools d'una sola peça) i el nou (--fase jugadors, chessresults, historics, calcul) amb les mateixes dades de partida i les mateixes fonts reals,
+# només amb les dues jugadores autoritzades. Els logs completes, el detall de les diferències i els resultats van xifrats; aquí només es veu un resum de recomptes.
+on:
+  workflow_dispatch:
+    inputs:
+      des:
+        description: "Torneigs acabats des de (AAAA-MM-DD)"
+        default: "2026-10-01"
+  push:
+    branches: [prova-fases]
+    paths: [".github/workflows/prova-fases.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - run: pip install beautifulsoup4
+      - name: Prepara dues còpies idèntiques de les dades
+        run: |
+          for d in A B; do mkdir -p /tmp/$d; rsync -a --exclude .git --exclude prova-fases --exclude resultats-xifrats ./ /tmp/$d/; done
+          rm -rf /tmp/A/tools /tmp/B/tools
+          cp -r prova-fases/antic/tools /tmp/A/tools
+          cp -r prova-fases/nou/tools /tmp/B/tools
+      - name: Codi antic (tot en una peça)
+        run: |
+          DES="${{ inputs.des }}"; [ -z "$DES" ] && DES=2026-10-01
+          cd /tmp/A; set +e
+          python3 -u "$GITHUB_WORKSPACE/prova-fases/privat.py" --des "$DES" > /tmp/logA.txt 2>&1; C=$?
+          echo "codi antic: sortida $C"
+      - name: Codi nou (quatre fases en cadena)
+        run: |
+          DES="${{ inputs.des }}"; [ -z "$DES" ] && DES=2026-10-01
+          cd /tmp/B; set +e; : > /tmp/logB.txt
+          for f in jugadors chessresults historics calcul; do
+            python3 -u "$GITHUB_WORKSPACE/prova-fases/privat.py" --des "$DES" --fase $f >> /tmp/logB.txt 2>&1; C=$?
+            echo "fase $f: sortida $C"
+          done
+      - name: Compara
+        run: |
+          python3 prova-fases/compara.py /tmp/A/data /tmp/B/data /tmp/detall.txt | tee /tmp/resum.txt
+          echo "línies de log: antic $(wc -l < /tmp/logA.txt), nou $(wc -l < /tmp/logB.txt)"
+      - name: Xifra i desa (logs, detall i dades de les dues còpies)
+        if: always()
+        run: |
+          gpg --batch --import proves-public.asc
+          cd /tmp && tar czf - logA.txt logB.txt resum.txt detall.txt A/data B/data 2>/dev/null | gpg --batch --trust-model always -r proves-escacs -e -o "$GITHUB_WORKSPACE/resultat.gpg"
+          cd "$GITHUB_WORKSPACE"; mkdir -p resultats-xifrats
+          cp resultat.gpg "resultats-xifrats/prova-fases-${GITHUB_RUN_NUMBER}.gpg"
+          git config user.name github-actions; git config user.email actions@users.noreply.github.com
+          git add resultats-xifrats; git commit -qm "Resultat xifrat de PROVA · cadena de fases"
+          for i in 1 2 3; do git pull -q --rebase --autostash -X theirs origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && break; sleep 5; done
